@@ -1,0 +1,210 @@
+.main_detalle {
+    max-width: 1400px;
+    margin-top: 100px;
+
+    .section_1 {
+        padding-top: 40px !important;
+        div {
+            h2 {
+                text-transform: uppercase;
+                color: var(--color-4);
+            }
+        }
+
+        div {
+            .foto-principal {
+                margin-top: 15px;
+            }
+        }
+
+        .contenedor-fondos {
+            div {
+                div {
+                    div {
+                        margin-top: 15px;
+                        border: var(--borde);
+                        padding: 5px;
+                        border-radius: 10px;
+                        box-shadow: 5px 4px 12px 0px rgba(0,0,0,0.82);
+                        -webkit-box-shadow: 5px 4px 12px 0px rgba(0,0,0,0.82);
+                        -moz-box-shadow: 5px 4px 12px 0px rgba(0,0,0,0.82);
+                        cursor: pointer;
+                        
+                        .contenedor-fondos-js {
+                            margin: auto;
+                            //background-image: url("../imgs/detalles/cronos1/a.webp");
+                            background-size: cover;
+                            background-position: center;
+                            width: 120px !important;
+                            height: 100px !important;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        #carouselExampleCaptions {
+            .carousel-indicators {
+                margin-bottom: 0px;
+
+                button {
+                    height: 15px ;
+                    width: 15px ;
+                    border-radius: 100%;
+                    margin: 0 5px;
+                   
+                }
+
+            }
+        }
+    }
+
+    .section_2 {
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            .contenedor-especificacion {
+                margin-top: -1px;
+                div:first-of-type {
+                    border-bottom: var(--borde);
+                    border-top: var(--borde);
+                    cursor: pointer;
+                    padding: 1rem;
+                }
+
+                div:last-of-type {
+
+                    span {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        padding: .5rem;
+                    }
+
+                    .borde-especificacion {
+                        max-width: 1px !important;
+                        padding: 16px 0px;
+                        border: none;
+                        border-left: 0.2px solid rgb(206, 197, 197);
+                    }
+
+                    .contenedor-descripcion {
+                        span {
+                            max-width: 200px;
+                            justify-content: left;
+                        }
+                    }
+                }
+
+                .contenedor-descripcion:nth-child(even)  {
+                    background-color: #ffff; /* fondo azul para elementos pares */
+                }
+                .contenedor-descripcion:nth-child(odd)  {
+                    background-color: #e6e6e6; /* fondo rojo para elementos impares */
+                }
+            }
+        }
+
+        .cuadro-especificaciones {
+            border: 1px solid var(--color-2);
+            padding: 20px;
+            margin-top: 40px;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                div {
+                    h3 {
+                        color: var(--color-5);
+                        text-transform: uppercase;
+                        
+                    }
+                    h3 + span {
+                        color: var(--color-2)
+                    }
+                }
+
+                > div:nth-of-type(2) {
+                    > span:first-of-type {
+                        margin-top: 20px;
+                        font-size: 2rem;
+                        color: var(--color-4)
+                    }
+                    
+                    p {
+                        color: var(--color-2)
+                    }
+
+                    .cuota-especificaciones {
+                        color: var(--color-4)
+                    }
+
+                    > span:last-of-type  {
+                        font-size: .9rem;
+                    }
+                }
+
+                div:last-of-type {
+                    background-color: var(--color-4);
+                    text-align: center;
+                    color: var(--color-1);
+                    padding: 10px;
+                    cursor: pointer;
+                    margin-top: 20px;
+                    height: 40px !important;
+                }
+                
+            }
+        }
+    }
+
+    .section_3-interes {
+        .carousel-sugerencia {
+            .card-auto {
+                border: 1px solid #e3e4e6;
+                margin: auto;
+
+                h3 {
+                    text-transform: uppercase;
+                    font-size: 1.1rem;
+                    text-align: start;
+                    padding-left: 20px;
+                }
+    
+                div {
+                    span {
+                        font-size: .9rem;
+                        color: #4e4c4c;
+                        padding-left: 20px;
+                    }
+                }
+    
+                >span {
+                    padding-left: 20px;
+                    color: #02539c;
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                }
+            }
+        }
+            
+        div {
+            div {
+                button {
+                    
+                    span {
+                        background-color: rgb(0, 0, 0);
+                        border-radius: 50%;
+                        
+                    }
+                }
+            }
+        }
+    
+    }
+}
+

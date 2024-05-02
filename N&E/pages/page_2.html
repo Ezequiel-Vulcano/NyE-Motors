@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N&E Motors</title>
+    <link rel="stylesheet" href="../scss/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d906409094.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="container-fluid">
+        <h1 class="d-none">N&E Motors</h1>
+        <div class="row nav-info">
+            <section class="col-12 d-flex justify-content-evenly align-items-center justify-content-lg-evenly">
+                    <span class="d-flex align-items-center d-none d-md-block">
+                        <i class="fa-solid fa-location-dot me-2"></i>
+                        Martin Fierro 3250, Villa Udaondo
+                    </span>
+                    <span class="d-flex align-items-center m-4">
+                        <i class="fa-solid fa-phone me-2"></i>0800-362-0085
+                    </span>
+                    <span class="d-flex align-items-center">
+                        <i class="fa-solid fa-envelope me-2"></i>adm.nyemotors@gmail.com
+                    </span>
+            </section>
+            <section class="col-12 mt-3 pb-3 d-flex justify-content-between d-md-none">
+                <div>
+                    <a href="../index.html">
+                        <img src="../imgs/header/logo-negro.svg" alt="logo de la empresa">
+                    </a>   
+                </div>
+                <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-bars" id="navegacion"></i>
+                </div>
+            </section>
+            <section class="col-12 mt-3 pb-3 d-flex justify-content-between d-none d-md-flex nav-destokp">
+                <div>
+                    <a href="../index.html">
+                        <img src="../imgs/header/logo-negro.svg" alt="logo de la empresa">
+                    </a>   
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="../index.html#contacto">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="../index.html#section_6" >Testimonios</a>
+                        </li>
+                        <li>
+                            <a href="../index.html#section_2">Nosotros</a>
+                        </li>
+                        <li>
+                            <a id="planes">Planes</a>
+                            <div class="triangulo"></div>
+                            <div class="menu-desplegable">
+                                <div class="triangulo"></div>
+                                <ul class="d-flex flex-column">
+                                    <li>
+                                        <a href="./page_1.html" class="enlaces">Planes de ahorro</a>
+                                    </li>
+                                    <li>
+                                        <a href="./page_3.html" class="enlaces">Planes adjudicados</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="./page_4.html" class="vende">Vende tu auto</a>
+                </div>
+            </section>
+        </div>
+
+        <div class="row d-flex justify-content-end nav-mobile">
+            <section class="col-12 filtros-mobile">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between contenedor-titulo align-items-center me-5">
+                        <h2>Menu</h2>
+                        <i class="fa-solid fa-xmark cerrar"></i>
+                    </div>
+                    <div class="col-12 d-flex flex-column contenedor-paginas p-4">
+                        <a href="../index.html#contacto" class="mt-3">Contacto</a>
+                        <a href="../index.html#section_6" class="mt-3">Testimonios</a>
+                        <a href="../index.html#section_2" class="mt-3">Nosotros</a>
+                        <a href="./page_4.html" class="mt-3">Vende tu Auto</a>
+
+
+                        <!--! BARRA DE BOOSTRAP PARA COLAPSAR ELEENTOS -->
+                        <a class="mt-3" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Planes
+                        </a>
+                        <div class="collapse" id="collapseExample">
+                            <ul>
+                                <li class="mt-4">
+                                    <a href="./page_1.html" class="enlaces">Planes de ahorro</a>
+                                </li>
+                                <li class="mt-2">
+                                    <a href="./page_3.html" class="enlaces">Planes adjudicados</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="footer-2 col-12">
+                        <div class="d-flex justify-content-center">
+                            <i class="fa-brands fa-square-facebook p-2"></i>
+                            <i class="fa-brands fa-instagram p-2"></i>
+                            <i class="fa-brands fa-whatsapp p-2"></i>
+                        </div>
+                        <span class="text-center">N&E Motors © 2023, todos los derechos reservados.</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <main class="container-fluid main_detalle">
+        <section class="section_1 row p-md-4">
+            <div class="ps-lg-5 col-xl-12 mt-sm-1 mb-sm-0 p-sm-4 mt-4">
+                <h2 class="fs-1 mb-0">FIAT CRONOS 1.3 DRIVE L/22  2024</h2>
+                <span>Modelo: 2024 | 0Km </span>
+            </div>
+
+            <!--TODO Contenedor que tiene las fotos de los distintos autos 8 fotos en la version de pc-->
+            <div class="col-xl-2 col-lg-3 contenedor-fondos d-none d-lg-block">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6">    
+                        <div>
+                            <span class="contenedor-fondos-js"></span>
+                        </div>
+                        <div>
+                            <span class="contenedor-fondos-js"></span>
+                        </div>
+                        <div>
+                            <span class="contenedor-fondos-js"></span>
+                        </div>
+                        <div>
+                            <span class="contenedor-fondos-js"></span>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div>
+                            <span class="contenedor-fondos-js"></span>
+                        </div>
+                        <div>
+                            <span class="contenedor-fondos-js"></span>
+                        </div>
+                        <div>
+                            <span class="contenedor-fondos-js"></span>
+                        </div>
+                        <div>
+                            <span class="contenedor-fondos-js"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--! Contenedor PC -->
+            <div class="col-xl-8 d-xl-block col-lg-8 col-md-8 col-sm-9 m-auto">
+                <img src="" alt="foto principal del auto" class="w-100 foto-principal">
+            </div>
+
+            <!--! Contenedor MOBIL -->
+            <div id="carouselExampleCaptions" class="carousel slide d-none">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                </div>
+
+                <div class="carousel-inner"> 
+                    <div class="carousel-item active contenedor-fondos-js-2">
+                    </div>
+
+                    <div class="carousel-item contenedor-fondos-js-2">
+                    </div>
+                    
+                    <div class="carousel-item contenedor-fondos-js-2">
+                    </div>
+
+                    <div class="carousel-item  contenedor-fondos-js-2">
+                    </div>
+
+                    <div class="carousel-item contenedor-fondos-js-2">
+                    </div>
+                    
+                    <div class="carousel-item contenedor-fondos-js-2">
+                    </div>
+
+                    <div class="carousel-item  contenedor-fondos-js-2">
+                    </div>
+
+                    <div class="carousel-item contenedor-fondos-js-2">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!--! ESPECIFICACIONES DE LA UNIDAD EN ........768px........ -->
+            <div class="col-xl-3 col-10 col-md-4 m-auto mt-lg-3 cuadro-especificaciones d-flex d-none d-md-flex d-lg-none">
+                <div >
+                    <div>
+                        <h3 class="nombre-especificaciones">Nombre y marca del auto</h3>
+                        <span class="d-block">Modelo:2024 | 0Km</span>
+                    </div>
+
+                    <div>
+                        <span class="d-block precio-especificaciones">Precio de unidad</span>
+                        <p>En cuotas a partir de <span class="cuota-especificaciones">CUOTAS </span>por mes.</p>
+                        <span>● Consultar las distintas promociones bancarias.</span>
+                    </div>
+                    
+
+                    <div>
+                        Recibir asesoramiento
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section_2  mt-5">
+            <h2 class="col-xl-12 fs-2 ps-4 pe-4">FICHA TECNICA</h2>
+
+            <div class="row justify-content-between d-flex align-items-start"> 
+                <div class="col-xl-8 col-md-8 mt-xl-0 p-4 col-md-12 col-lg-8">
+
+                    <!--TODO _________________ ESPECIFICACIONES _________________ -->
+    
+                    <div class="contenedor-especificacion" data-valor="true">
+                        <div class="collapsed d-flex justify-content-between p-xl-3 align-items-center" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <span class="fs-5">Especificaciones principales</span>
+                            <span>+</span>
+                        </div>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample" >
+                            <div class="d-flex flex-column p-xl-4 contenedor-especificacion-items">
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Marca:</span>
+                                    <div class="col-xl-4 borde-especificacion col-2"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Modelo:</span>
+                                    <div class="col-xl-4 borde-especificacion col-2"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Año:</span>
+                                    <div class="col-xl-4 borde-especificacion col-2"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Version:</span>
+                                    <div class="col-xl-4 borde-especificacion col-2"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Tipo de combustible:</span>
+                                    <div class="col-xl-4 borde-especificacion col-2"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Puertas:</span>
+                                    <div class="col-xl-4 borde-especificacion col-2"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Transmisión:</span>
+                                    <div class="col-xl-4 borde-especificacion col-2"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Motor:</span>
+                                    <div class="col-xl-4 borde-especificacion col-2"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Tipo de carrocería:</span>
+                                    <div class="col-xl-4 borde-especificacion col-2"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Kilómetros:</span>
+                                    <div class="col-xl-4 borde-especificacion col-2"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                    <!--TODO _________________ CONFORT _________________ -->
+    
+                    <div class="contenedor-especificacion" data-valor="true">
+                        <div class="collapsed d-flex justify-content-between p-xl-3 align-items-center" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
+                            <span class="fs-5">Confort y conveniencia</span>
+                            <span>+</span>
+                        </div>
+                        <div id="collapsetwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="d-flex flex-column p-xl-4 contenedor-especificacion-items ">
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Aire acondicionado:</span>
+                                    <div class="col-xl-4 col-2 borde-especificacion"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Computadora de abordo:</span>
+                                    <div class="col-xl-4 borde-especificacion col-2"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Sensor de lluvia:</span>
+                                    <div class="col-xl-4 borde-especificacion col-2"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Porta vasos:</span>
+                                    <div class="col-xl-4 borde-especificacion col-2"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                    <!--TODO _________________ INFORMACION _________________ -->
+    
+                    <div class="contenedor-especificacion" data-valor="true">
+                        <div class="collapsed d-flex justify-content-between p-xl-3 align-items-center" data-bs-toggle="collapse" data-bs-target="#collapsetres" aria-expanded="false" aria-controls="collapsetres">
+                            <span class="fs-5">Información general</span>
+                            <span>+</span>
+                        </div>
+                        <div id="collapsetres" class="accordion-collapse collapse" data-bs-parent="#accordionExample" >
+                            <div class="d-flex flex-column p-xl-4 contenedor-especificacion-items">
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Dirección:</span>
+                                    <div class="col-xl-4 borde-especificacion col-2"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Alarma:</span>
+                                    <div class="col-xl-4 borde-especificacion col-2"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!--TODO _________________ RENDIMIENTO _________________ -->
+    
+                    <div class="contenedor-especificacion" data-valor="true">
+                        <div class="collapsed d-flex justify-content-between p-xl-3 align-items-center" data-bs-toggle="collapse" data-bs-target="#collapsecuatro" aria-expanded="false" aria-controls="collapsecuatro">
+                            <span class="fs-5">Rendimiento y dimensiones</span>
+                            <span>+</span>
+                        </div>
+                        <div id="collapsecuatro" class="accordion-collapse collapse" data-bs-parent="#accordionExample" >
+                            <div class="d-flex flex-column p-xl-4 contenedor-especificacion-items">
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Control de tracción:</span>
+                                    <div class="col-xl-4 borde-especificacion col-3"></div>
+                                    <span class="col-xl-4 col-5">asas</span>
+                                </span>
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Capacidad de personas:</span>
+                                    <div class="col-xl-4 borde-especificacion col-3"></div>
+                                    <span class="col-xl-4 col-5">saas</span>
+                                </span>
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Potencia:</span>
+                                    <div class="col-xl-4 borde-especificacion col-3"></div>
+                                    <span class="col-xl-4 col-5">asas</span>
+                                </span>
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Largo x Altura x Ancho:</span>
+                                    <div class="col-xl-4 borde-especificacion col-3"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Distancia entre ejes:</span>
+                                    <div class="col-xl-4 borde-especificacion col-2"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Capacidad del tanque:</span>
+                                    <div class="col-xl-4 borde-especificacion col-2"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Válvulas por cilindro:</span>
+                                    <div class="col-xl-4 borde-especificacion col-2"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!--TODO _________________ ENTRETENIMIENTO _________________ -->
+    
+                    <div class="contenedor-especificacion" data-valor="true">
+                        <div class="collapsed d-flex justify-content-between p-xl-3 align-items-center" data-bs-toggle="collapse" data-bs-target="#collapsecinco" aria-expanded="false" aria-controls="collapsecinco">
+                            <span class="fs-5">Entretenimiento</span>
+                            <span>+</span>
+                        </div>
+                        <div id="collapsecinco" class="accordion-collapse collapse" data-bs-parent="#accordionExample" >
+                            <div class="d-flex flex-column p-xl-4 contenedor-especificacion-items">
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">AM/FM:</span>
+                                    <div class="col-xl-4 borde-especificacion col-2"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Android auto:</span>
+                                    <div class="col-xl-4 borde-especificacion col-2"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Apple CarPlay:</span>
+                                    <div class="col-xl-4 borde-especificacion col-2"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!--TODO _________________ SEGURIDAD _________________ -->
+    
+                    <div class="contenedor-especificacion" data-valor="true">
+                        <div class="collapsed d-flex justify-content-between p-xl-3 align-items-center" data-bs-toggle="collapse" data-bs-target="#collapseseis" aria-expanded="false" aria-controls="collapseseis">
+                            <span class="fs-5">Seguridad</span>
+                            <span>+</span>
+                        </div>
+                        <div id="collapseseis" class="accordion-collapse collapse" data-bs-parent="#accordionExample" >
+                            <div class="d-flex flex-column p-xl-4 contenedor-especificacion-items">
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Frenos ABS:</span>
+                                    <div class="col-xl-4 borde-especificacion col-2"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Airbag para conductor y pasajero:</span>
+                                    <div class="col-xl-4 borde-especificacion col-2"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Tracción ASR:</span>
+                                    <div class="col-xl-4 borde-especificacion col-2"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!--TODO _________________ EXTERIOR _________________ -->
+    
+                    <div class="contenedor-especificacion" data-valor="true">
+                        <div class="collapsed d-flex justify-content-between p-xl-3 align-items-center" data-bs-toggle="collapse" data-bs-target="#collapsesiete" aria-expanded="false" aria-controls="collapsesiete">
+                            <span class="fs-5">Seguridad</span>
+                            <span>+</span>
+                        </div>
+                        <div id="collapsesiete" class="accordion-collapse collapse" data-bs-parent="#accordionExample" >
+                            <div class="d-flex flex-column p-xl-4 contenedor-especificacion-items">
+                                <span class="row contenedor-descripcion">
+                                    <span class="col-xl-4 col-5">Llantas de aliacion:</span>
+                                    <div class="col-xl-4 borde-especificacion col-2"></div>
+                                    <span class="col-xl-4 col-5"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+    
+                <div class="col-xl-3 col-10 col-md-4 m-auto  mt-lg-3 cuadro-especificaciones d-flex d-md-none d-lg-flex justify-content-sm-center mt-sm-0 mb-sm-4">
+                    <div >
+                        <div>
+                            <h3 class="nombre-especificaciones">Nombre y marca del auto</h3>
+                            <span class="d-block">Modelo:2024 | 0Km</span>
+                        </div>
+
+                        <div>
+                            <span class="d-block precio-especificaciones">Precio de unidad</span>
+                            <p>En cuotas a partir de <span class="cuota-especificaciones">CUOTAS </span>por mes.</p>
+                            <span>● Consultar las distintas promociones bancarias.</span>
+                        </div>
+                        
+    
+                        <div>
+                            Recibir asesoramiento
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="section_3-interes d-md-none">
+            <h2>Quiza tambien te pueda interesar</h2>
+            <div>
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active carousel-sugerencia">
+
+                        </div>
+
+                        <div class="carousel-item carousel-sugerencia">
+
+                        </div>
+
+                        <div class="carousel-item carousel-sugerencia">
+
+                        </div>
+
+                        <div class="carousel-item carousel-sugerencia">
+
+                        </div>
+
+                        <div class="carousel-item carousel-sugerencia">
+                            
+                        </div>
+
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!--
+                <div id="carrusel2" class="carousel slide">
+                    <div class="carousel-inner">
+                        
+                        <div class="carousel-item active carousel-sugerencia-2 carousel-sugerencia-2-1">
+                            <div class="carousel-item-2"></div>
+                            <div class="carousel-item-2"></div>
+                            <div class="carousel-item-2"></div>
+
+                            
+                        </div>
+
+                        <div class="carousel-item carousel-sugerencia-2 carousel-sugerencia-2-2">
+                            <div class="carousel-item-2"></div>
+                            <div class="carousel-item-2"></div>
+                        </div>
+                        
+
+                        
+
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carrusel2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carrusel2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid mt-5">
+        <div class="row">
+            <div class="footer-1 d-flex justify-content-center col-12 flex-column text-center p-3">
+                <div class="row d-flex justify-content-center flex-column align-items-center">
+                    <img src="../imgs/header/logo-negro.svg" alt="logo de la empresa" class="img-fluid col-5 mt-5 mb-5">
+                    <span class="footer-suscribite">¡Suscríbete a nuesto Newsletter!</span>
+                    <span class="footer-suscribite-2 mb-3">y enterate de todas nuestras novedades!</span>
+    
+                    <!--! NEWSLETTER-->
+                    <!--! TRABAJAR EN EL NEWSLETTER
+                    <form action="/ruta/donde/enviar" method="POST" class="form-news">
+                        <label for="email" class="d-none">Correo Electrónico:</label>
+                        <div class="email-container">
+                            <input type="email" id="email" name="email" required>
+                            <input type="submit" value="Enviar" class="submit-button">
+                        </div>
+                    </form>-->
+                </div>
+    
+            </div>
+            <div class="footer-2 col-12">
+                <div class="d-flex justify-content-center">
+                    <i class="fa-brands fa-square-facebook p-2"></i>
+                    <i class="fa-brands fa-instagram p-2"></i>
+                    <i class="fa-brands fa-whatsapp p-2"></i>
+                </div>
+                <span class="text-center">N&E Motors © 2023, todos los derechos reservados.</span>
+            </div>
+        </div>
+        
+    </footer>
+
+
+    <script src="../js/_detalle.js"></script>
+    <script src="../js/_detalle_2.js"></script>
+    <script src="../js/_navbarMobil.js"></script>
+    <script src="../js/_objetoCatalogo.js"></script>
+</body>

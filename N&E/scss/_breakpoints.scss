@@ -1,0 +1,962 @@
+@media (min-width: 490px) {
+    
+    p {
+        font-size: 1rem !important;
+    }
+
+    span {
+        font-size: 1rem;
+    }
+
+    main {
+        max-width: 2000px;
+    }
+
+    //! _____________________________ NAVEGACION _____________________________
+    header {
+        .nav-info {
+            section:first-of-type {
+                height: 50px;
+                span {
+                    font-size: .9rem;
+                }
+            }
+
+            section:last-of-type {
+                height: 100px;
+
+                div {
+                    img {
+                        height: 65px;
+                    }
+                }
+
+                div {
+                    i {
+                        font-size: 1.3rem;
+                    }
+                }
+
+                div:first-of-type {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+
+        .nav-mobile {
+            .filtros-mobile {
+                div {
+
+                    .contenedor-titulo {
+                        h2 {
+                            font-size: 2.2rem;
+                        }
+                        i {
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    .contenedor-paginas {
+                        a {
+                            font-weight: 400;
+                            font-size: 1.8rem;
+                        }
+                        div {
+                            ul {
+                                li {
+                                    a {
+                                        font-size: 1.5rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                div:last-of-type {
+                    div {
+                        div {
+                            i {
+                                font-size: 2rem;
+                            }
+                        }
+                        span {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+    //! _____________________________ CATALOGO _____________________________
+    main {
+        .filtros {
+            padding-top: 150px;
+        }
+
+        .contenedor-autos {
+            gap: 20px;
+
+            .card-auto {
+                width: calc(50% - 20px);
+
+                h3 {
+                    min-height: 45px;
+                }
+            }
+        }
+
+    }
+
+    
+    //! _____________________________ INDEX _____________________________
+    main {
+        .section_1 {
+            div {
+                div{
+                    div{
+                        .contenedor-contenido {
+                            h2 {
+                                font-size: 1.6rem;
+                                font-weight: bold;
+                                text-shadow: 5px 5px 5px black;
+                            }
+    
+                            .modelos {
+                                background-color: white;
+                                width: 150px;
+                                height: 35px;
+    
+                                span {
+                                    font-size: 1rem;
+                                    color: black;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+
+        .section_2 {
+            padding: .5rem 1.5rem !important;
+        } 
+
+        .section_4 {
+            .contenedor-filtros-2 {
+                gap: 20px
+                ;
+                div {
+                    .descripcion {
+    
+                        h3 {
+                            font-size: 2rem;
+                            min-height: 70px;
+                        }
+    
+                        span:first-of-type {
+                            font-size: 1.1rem;
+                        }
+    
+                        a {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+    
+        }
+
+        .section_5 {
+            div:first-of-type {
+                .carousel-inner {
+                    max-width: 600px;
+                    div {
+                        img {
+                            aspect-ratio: 16/9;
+                        }
+                    }
+                }
+            }
+        }
+
+        .section_6 {
+            > div {
+                .contenedor_mobil{
+                    max-width: 500px;
+                }
+            }
+        }
+    }
+
+
+    //! _____________________________ ADJUDICADOS _____________________________
+    .main_adjudicados, .main_vendeTuAuto {
+
+        .section_1 {
+            height: 250px;
+        }
+
+        > div:first-of-type {
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section_2_adjudicados {
+    
+            div {
+                div {
+                    .contenedor-autos-adjudicados {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 600px) {
+
+    //! _____________________________ INDEX _____________________________
+
+    main {
+        .section_1 {
+            div {
+                div {
+                    div {
+                        max-height: 550px;
+
+                        h2 {
+                            font-size: 2rem !important;
+                            font-weight: bold;
+                            text-shadow: 5px 5px 5px black;
+                        }
+
+                        .modelos {
+                            background-color: white;
+                            width: 200px !important;
+                            height: 25px;
+
+                            span {
+                                font-size: .8rem;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //! _____________________________ ADJUDICADOS _____________________________
+    .main_adjudicados, .main_vendeTuAuto {
+        .section_1 {
+            height: 300px;
+        }
+        > div:first-of-type {
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section_2_adjudicados {
+            div {
+                div {
+                    .contenedor-autos-adjudicados {
+                        width: calc(50% - 20px);
+                        position: relative;
+                        min-height: 450px;
+                        margin: 10px;
+                        max-width: 320px;
+
+                        > div:last-of-type {
+                            position: absolute;
+                            bottom: 20px;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 700px) {
+
+    //! _____________________________ INDEX _____________________________
+
+    main {
+        .section_1 {
+            div {
+                div {
+                    div {
+                        max-height: 550px;
+
+                        h2 {
+                            font-size: 2.5rem !important;
+                            font-weight: bold;
+                            text-shadow: 5px 5px 5px black;
+                        }
+
+                        .modelos {
+                            background-color: white;
+                            width: 200px !important;
+                            height: 50px !important;
+
+                            span {
+                                font-size: .8rem;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    //! _____________________________ CATALOGO _____________________________
+
+    main {
+        .categoria {
+            .filtro-categoria {
+                width: 50%;
+                transform: translateX(100%);
+                transition: transform 0.3s ease;
+                background-color: #ffffff;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                height: 100vh;
+                overflow-y: auto;
+                z-index: 9000;
+            }
+        }
+        
+        .contenedor-autos {
+            .card-auto {
+                width: calc(45% - 20px);
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    //! _____________________________ NAVEGACION _____________________________
+    header {
+        .nav-destokp {
+            padding: 1.5rem;
+
+            div {
+                display: flex;
+                align-items: center;
+
+                ul {
+                    display: flex;
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        position: relative;
+                        list-style: none;
+                        padding-left: 1rem;
+
+                        a {
+                            font-size: 1.1rem;
+                            text-decoration: none;
+                            color: black;
+                        }
+                        
+                        >a:hover {
+                            cursor: pointer;
+                            color: #02539c !important;
+                            font-weight: bold;
+                            transition: .1s;
+                            border-bottom: 3px solid #02539c;
+                        }
+                        
+                        .enlaces:hover {
+                            font-weight: 400;
+                            color: var(--color-1) !important;
+                            border-bottom: 1px solid var(--color-1) !important;
+                        }
+
+                        .menu-desplegable {
+                            top: 40px;
+                            right:  0;
+                            width: 180px;
+                            height: 70px;
+                            position: absolute;
+                            background-color: #02539c;
+                            opacity: 0;
+                            pointer-events: none;
+                            transition: max-width .35s ease; /* Transición de la anchura máxima */
+
+                            .triangulo {
+                                position: absolute;
+                                top: -15px;
+                                right: 20px;
+                                width: 0;
+                                height: 0;
+                                border-left: 10px solid transparent;
+                                border-right: 10px solid transparent;
+                                border-bottom: 17.32px solid #02539c; 
+                            }
+                            
+                            a {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+
+            div {
+                > .vende {
+                    text-decoration: none;
+                    color: black;
+                    border: 1px solid black;
+                    padding: .5rem 1.5rem;
+
+
+                    transition: background-color 1s;
+                }
+
+                .vende:hover {
+                    border: 1px solid rgb(255, 255, 255);
+                    background-color: #02539c; /* Cambia el color de fondo a azul al pasar el ratón */
+                    color: white;/* Color de texto azul al pasar el ratón */
+                }
+            }
+        }
+    }
+    
+
+    //! _____________________________ DETALLES _____________________________
+    .main_detalle {
+        margin-top: 140px;
+
+        .section_1 {
+            .cuadro-especificaciones {
+                border: 1px solid var(--color-2);
+
+                padding: 20px;
+                margin-top: 40px;
+    
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    div {
+                        h3 {
+                            color: var(--color-5);
+                            text-transform: uppercase;
+                            
+                        }
+                        h3 + span {
+                            color: var(--color-2)
+                        }
+                    }
+    
+                    > div:nth-of-type(2) {
+                        > span:first-of-type {
+                            margin-top: 20px;
+                            font-size: 2rem;
+                            color: var(--color-4)
+                        }
+                        
+                        p {
+                            color: var(--color-2)
+                        }
+    
+                        .cuota-especificaciones {
+                            color: var(--color-4)
+                        }
+    
+                        > span:last-of-type  {
+                            font-size: .9rem;
+                        }
+                    }
+    
+                    div:last-of-type {
+                        background-color: var(--color-4);
+                        text-align: center;
+                        color: var(--color-1);
+                        padding: 10px;
+                        cursor: pointer;
+                        margin-top: 20px;
+                        height: 40px !important;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+
+    //! _____________________________ VENDER AUTO _____________________________
+    .section_2_adjudicados {
+        .tarjetas-vender {
+            background-color: var(--color-8);
+            border: var(--borde);
+            min-height: 350px;
+            max-width: 50%;
+
+            h3 {
+                font-size: 2rem;
+                color: var(--color-4);
+            }
+            
+            p {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    //! _____________________________ CATALOGO _____________________________
+
+    main {
+        .contenedor-autos {
+            .card-auto {
+                width: calc(30% - 20px);
+            }
+        }   
+    }
+
+    
+    //! _____________________________ ADJUDICADOS _____________________________
+    
+    .main_adjudicados, .main_vendeTuAuto {
+        .section_1 {
+            height: 350px;
+    
+            div {
+                padding: 20px;
+                color: var(--color-1);
+                
+                h2 {
+                    font-size: 3rem;
+                }
+
+                >span {
+                    font-size: 1.5rem;
+                }
+
+                .modelos {
+                    background-color: var(--color-1);
+                    width: 180px;
+                    height: 50px;
+                    color: var(--color-5);
+                    padding: 0px;
+                    font-size: .9rem;
+
+                    span {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media (min-width: 992px) {
+    //! _____________________________ VENDER AUTO _____________________________
+    .section_2_adjudicados {
+
+        .tarjetas-vender {
+            padding: 10px;
+            padding-top: 0;
+            width: 33%;
+            margin: 20px;
+            background-color: var(--color-8);
+            border: var(--borde);
+            min-height: 380px !important;
+
+            h3 {
+                font-size: 1.3rem;
+                color: var(--color-4);
+            }
+            
+            p {
+                font-size: .9rem;
+            }
+        }
+
+        
+    }
+
+    .main_vendeTuAuto + main {
+        margin: auto;
+    }
+    
+    .section_3_adjudicados {
+        .foto_form {
+            background-image: url("../imgs/vendeTuAuto/auto_form.png");
+            background-size: cover;
+            height: auto;
+        }
+
+        .alto_300 {
+            height: 200px !important;
+        }
+
+        >div:last-of-type {
+            form {
+                div {
+                    >div:last-of-type{
+                        margin-left: 0px !important;
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+    //! _____________________________ DETALLE _____________________________
+
+    .main_detalle {
+        margin-top: 160px;
+    
+        .section_1 {
+            padding-top: 40px !important;
+            justify-content: center;
+
+            div {
+                h2 {
+                    text-transform: uppercase;
+                    color: var(--color-4);
+                }
+            }
+    
+            div {
+                .foto-principal {
+                    margin-top: 15px;
+                }
+            }
+    
+            .contenedor-fondos {
+                div {
+                    div {
+                        div {
+                            margin-top: 15px;
+                            border: var(--borde);
+                            padding: 5px;
+                            border-radius: 10px;
+                            box-shadow: 5px 4px 12px 0px rgba(0,0,0,0.82);
+                            -webkit-box-shadow: 5px 4px 12px 0px rgba(0,0,0,0.82);
+                            -moz-box-shadow: 5px 4px 12px 0px rgba(0,0,0,0.82);
+                            cursor: pointer;
+                            
+                            .contenedor-fondos-js {
+                                margin: auto;
+                                //background-image: url("../imgs/detalles/cronos1/a.webp");
+                                background-size: cover;
+                                background-position: center;
+                                width: 100% !important;
+                                height: 60px !important;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .section_2 {
+            div {
+                .cuadro-especificaciones {
+                    min-height: 420px;
+                }
+            }
+        }
+    }
+
+
+    //! _____________________________ CATALOGO _____________________________
+    
+    .main_catalogo {
+        margin-top: 180px;
+
+        .contenedor-autos {
+            gap: 30px;
+
+            .card-auto {
+                width: calc(33% - 20px);
+                margin-top: 0 !important;
+            }
+        }
+        
+        div {
+            .categoria2 {
+                .filtro-categoria{
+                    div {
+                        .contenedor-titulo {
+                            h2 {
+                                font-weight: 500;
+                                padding-bottom: 1rem;
+                                text-transform: uppercase;
+                                color: #373737;
+                                font-size: 1.6rem;
+                                border-bottom: 1px solid rgb(200, 200, 200);
+                                margin: 0px;
+                            }
+                        }
+
+                        div {
+                            form {
+                                .titulo-simbolo {
+                                    cursor: pointer;
+                                    border-bottom: 1px solid rgb(200, 200, 200);
+                                    
+                                    h3 {
+                                        font-weight: 450;
+                                        font-size: 1.3rem;
+                                        padding: 1rem 0;
+                                        margin: 0px;
+                                    }
+                                }
+
+                                .contenedor-filtros {
+                                    padding: 1rem 0;
+
+                                    div {
+                                        input {
+                                            cursor: pointer;
+                                        }
+                                        
+                                        label {
+                                            pointer-events: none;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .modelo {
+                                .contenedor-filtros {
+                                    max-height: 200px;
+                                    overflow: auto;
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            div {
+
+                li {
+                    list-style: none;
+                    text-align: center;
+                }
+
+                position: relative;
+
+                .menu-desplegable2 {
+                    cursor: pointer;
+                    pointer-events: none;
+                    opacity: 0;
+                    z-index: 10;
+                    top: 65px;
+                    right:  20px;
+                    width: 150px;
+                    height: 70px;
+                    position: absolute;
+                    background-color: #e3e4e6;
+                    
+                    transition: max-width .35s ease; /* Transición de la anchura máxima */
+
+                    .triangulo {
+                        position: absolute;
+                        top: -15px;
+                        right: 20px;
+                        width: 0;
+                        height: 0;
+                        border-left: 10px solid transparent;
+                        border-right: 10px solid transparent;
+                        border-bottom: 17.32px solid #e3e4e6; 
+                    }
+                    
+                    span {
+                        color: #000000;
+                    }
+                }
+
+            }
+
+            .caja-filtros {
+                div {
+                    span {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+    main {
+        .section_5 {
+            .tarjetas-pc {
+                div {
+                    div {
+                        position: relative;
+
+                        span {
+                            left: 50%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .section_6 {
+            div {
+                .contenedor_pc {
+                    #carruselPC {
+                        .carousel-inner {
+                            .carousel-item {
+                                padding-left: 20px;
+                                
+                                > div {
+                                    width: 30%;
+                                    color: #212529;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+    //! _____________________________ ADJUDICADOS _____________________________
+
+    .main_adjudicados, .main_vendeTuAuto {
+        .section_1 {
+            height: 400px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+
+    p {
+        font-size: 1.1rem !important;
+    }
+
+    //! _____________________________ CATALOGO _____________________________
+    main {
+        .filtros {
+            padding-top: 150px;
+
+            div {
+                cursor: pointer;
+            }
+        }
+
+        .contenedor-autos {
+            gap: 30px;
+
+            .card-auto {
+                width: calc(33% - 20px);
+                margin-top: 0 !important;
+
+                h3 {
+                    min-height: 45px;
+                }
+            }
+        }
+
+        .section_4 {
+            .contenedor-filtros-2-tarjetas {
+                width: 30%;
+
+                div {
+                    .descripcion {
+    
+                        h3 {
+                            font-size: 2rem;
+                        }
+    
+                        span:first-of-type {
+                            font-size: 1.1rem;
+                        }
+    
+                        a {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        
+        }
+    }
+
+
+    //! _____________________________ ADJUDICADOS _____________________________
+    .main_adjudicados, .main_vendeTuAuto {
+        .section_1 {
+            height: 450px;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    //! _____________________________ CATALOGO _____________________________
+    main {
+        .filtros {
+            padding-top: 150px;
+        }
+
+        .contenedor-autos {
+            gap: 40px;
+
+            .card-auto {
+                width: calc(25% - 30px);
+                margin-top: 0 !important;
+
+                h3 {
+                    min-height: 45px;
+                }
+            }
+        }
+
+    }
+
+    //! _____________________________ INDEX _____________________________
+
+    main {
+        .section_1 {
+            div {
+                div {
+                    div {
+                        max-height: 600px;
+                    }
+                }
+            }
+        }
+    }
+
+    //! _____________________________ ADJUDICADOS _____________________________
+    .main_adjudicados, .main_vendeTuAuto {
+        .section_1 {
+            height: 550px;
+        }
+    }
+}

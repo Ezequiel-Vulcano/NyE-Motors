@@ -1,0 +1,111 @@
+header {
+    //! ENCABEZADO DE COLOR NEGRO
+    //? Contiene el telefono y numero de la empresa en la version Mobile
+
+    .nav-info {
+        padding: 0 !important;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: var(--color-1);
+        padding: 10px 0;
+        z-index: 1000;
+
+        section:first-of-type {
+            height: 40px;
+            color: var(--color-1);
+            background-color: #000000;
+        }
+        
+        section:nth-child(2), section:nth-child(3) {
+            border-bottom: 1px solid rgb(128 128 128);
+            padding-top: 1rem;
+            margin-top: 0 !important;
+            -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+
+            div {
+                img {
+                    height: 50px;
+                }
+            }
+            div {
+                i {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        section {
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+
+        
+    //! VISTA DEL MENU HAMBURGUESA AL CLICKEAR EL ICONO 
+    //? Contiene las distintas secciones de la pagina (contacto, testimonios, planes, tec.)
+    
+    .nav-mobile {
+        .filtros-mobile {
+            display: none; //! con esto oculte el nav
+            background-color: var(--color-1);
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            height: 100vh;
+            overflow-y: auto;
+            z-index: 3000;
+
+            div {
+                padding: 0;
+                
+                // Titulo "Menu" + x de "cerrar"
+                .contenedor-titulo {
+                    background-color: #02539c;
+                    color: var(--color-1);
+                    padding: 1.2rem;
+                    font-size: 1.2rem;
+                    //margin: 0 1rem -1.1rem 0;
+                    z-index: 1000;
+         
+                    h2 {
+                        text-transform: uppercase;
+                        font-size: 1.7rem;
+                        margin: 0;
+                    }
+                }
+
+                // Enlaces a las otras paginas
+                .contenedor-paginas {
+                    a {
+                        text-decoration: none;
+                        color: #4d4d4d;
+                        font-weight: 500;
+                        font-size: 1.1rem;
+                    }
+
+                    ul {
+                        li {
+                            text-decoration: none;
+                            color: #4d4d4d;
+                            font-weight: 500;
+                            font-size: 1.1rem; 
+                            list-style-type: none;
+                        }
+                    }
+                }
+            }
+
+            div:last-of-type {
+                .footer-2 {
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
+

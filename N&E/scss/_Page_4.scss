@@ -1,0 +1,112 @@
+.main_vendeTuAuto {
+    padding: 0px !important;
+    margin-top: 120px;
+    text-shadow: 3px 3px 16px black;
+
+    .section_1 {
+        padding: 0px !important;
+        height: 200px;
+        background-image: url("../imgs/vendeTuAuto/portada.webp");
+        background-size: cover;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    div {
+        padding: 20px;
+        color: var(--color-1);
+
+        .modelos {
+            background-color: var(--color-1);
+            width: 130px;
+            height: 35px;
+            color: var(--color-5);
+            padding: 0px;
+            font-size: .9rem;
+        }
+
+        .modelos:hover {
+            background-color: var(--color-2) !important;
+            cursor: pointer;
+            color: var(--color-1) !important;
+        }
+    }
+
+    >div:first-of-type {
+        background-color: var(--color-4);
+        color: var(--color-1);
+    }
+}
+
+.section_2_adjudicados {
+    .tarjetas-vender {
+        background-color: var(--color-8);
+        border: var(--borde);
+        min-height: 350px;
+        max-width: 350px;
+        h3 {
+            color: var(--color-4);
+        }
+        
+        p {
+            font-size: .9rem;
+        }
+    }
+}
+
+.section_3_adjudicados {
+    padding: 2rem 1rem;
+    background-color: var(--color-8);
+
+    .alto_300 {
+        height: 300px !important;
+    }
+
+    div {
+        h2 {
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.8rem;
+            text-shadow: .1px .1px .1px black;
+            color: #0C599F; 
+        }
+
+        form {
+            div {
+                div {
+                    div {
+                        input {
+                            border-radius: 0px;
+                            height: 30px;
+                        }
+
+                        label {
+                            color: rgba(0, 0, 0, 0.505);
+                            font-size: .9rem;
+                        }
+
+                        input:focus {
+                            border-color: #0c589f37;
+                            box-shadow: 0 0 0 0.25rem #0c589f37;
+                        }
+
+                        textarea {
+                            min-height: 200px !important;
+                            border-radius: 0px;
+                            font-size: .9rem;
+                        }
+                    }
+
+                    button {
+                        background-color: #0C599F !important;
+                        border-radius: 0px;
+                        border: #02539c;
+                        color: #ffff;
+                    }
+                }
+            }
+        }
+    }
+}

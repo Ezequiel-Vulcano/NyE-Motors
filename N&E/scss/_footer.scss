@@ -1,0 +1,73 @@
+footer {
+    span {
+        font-size: 1rem;
+    }
+    .footer-1 {
+        background-color: #e3e4e6;
+
+        div {
+            img {
+                max-width: 250px;
+            }
+
+            .footer-suscribite {
+                font-weight: 700;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            .footer-suscribite-2 {
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            form {
+                .email-container {
+                    input {
+                        border: none;
+
+                        height: 40px;
+                    }
+
+                    .submit-button {
+                        background-color: var(--color-4);
+                        color: var(--color-1);
+                        width: 100px;
+                        margin-left: -5px;
+                    }
+
+                    .email-button {
+                        width: 200px;
+                    }
+
+                    .email-button:focus {
+                        outline: none; /* Elimina el borde de enfoque predeterminado */
+                        border: 1px solid #ccc; /* Establece un borde personalizado cuando el input está enfocado */
+                    }
+                }
+            }
+        }
+    }
+}
+
+//! Lo colocao del lado de afuera ya que lo utilizo tambien en mi menu hamburguesa
+.footer-2 {
+    text-align: center;
+
+    div {
+        margin-top: 1rem;
+
+        i {
+            font-size: 2rem;
+            color: #5a5a5a;
+        }
+        
+        .fa-brands:hover {
+            color: var(--color-7);
+            cursor: pointer;
+        }
+    }
+
+    span {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: .9rem;
+    }
+}

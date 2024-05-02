@@ -1,0 +1,1408 @@
+@charset "UTF-8";
+header .nav-info {
+  padding: 0 !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--color-1);
+  padding: 10px 0;
+  z-index: 1000;
+}
+header .nav-info section:first-of-type {
+  height: 40px;
+  color: var(--color-1);
+  background-color: #000000;
+}
+header .nav-info section:nth-child(2), header .nav-info section:nth-child(3) {
+  border-bottom: 1px solid rgb(128, 128, 128);
+  padding-top: 1rem;
+  margin-top: 0 !important;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+header .nav-info section:nth-child(2) div img, header .nav-info section:nth-child(3) div img {
+  height: 50px;
+}
+header .nav-info section:nth-child(2) div i, header .nav-info section:nth-child(3) div i {
+  font-size: 1.2rem;
+}
+header .nav-info section span {
+  font-size: 12px;
+}
+header .nav-mobile .filtros-mobile {
+  display: none;
+  background-color: var(--color-1);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 3000;
+}
+header .nav-mobile .filtros-mobile div {
+  padding: 0;
+}
+header .nav-mobile .filtros-mobile div .contenedor-titulo {
+  background-color: #02539c;
+  color: var(--color-1);
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  z-index: 1000;
+}
+header .nav-mobile .filtros-mobile div .contenedor-titulo h2 {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  margin: 0;
+}
+header .nav-mobile .filtros-mobile div .contenedor-paginas a {
+  text-decoration: none;
+  color: #4d4d4d;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+header .nav-mobile .filtros-mobile div .contenedor-paginas ul li {
+  text-decoration: none;
+  color: #4d4d4d;
+  font-weight: 500;
+  font-size: 1.1rem;
+  list-style-type: none;
+}
+header .nav-mobile .filtros-mobile div:last-of-type .footer-2 {
+  position: absolute;
+  bottom: 0;
+}
+
+footer span {
+  font-size: 1rem;
+}
+footer .footer-1 {
+  background-color: #e3e4e6;
+}
+footer .footer-1 div img {
+  max-width: 250px;
+}
+footer .footer-1 div .footer-suscribite {
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif;
+}
+footer .footer-1 div .footer-suscribite-2 {
+  font-family: "Times New Roman", Times, serif;
+}
+footer .footer-1 div form .email-container input {
+  border: none;
+  height: 40px;
+}
+footer .footer-1 div form .email-container .submit-button {
+  background-color: var(--color-4);
+  color: var(--color-1);
+  width: 100px;
+  margin-left: -5px;
+}
+footer .footer-1 div form .email-container .email-button {
+  width: 200px;
+}
+footer .footer-1 div form .email-container .email-button:focus {
+  outline: none; /* Elimina el borde de enfoque predeterminado */
+  border: 1px solid #ccc; /* Establece un borde personalizado cuando el input está enfocado */
+}
+
+.footer-2 {
+  text-align: center;
+}
+.footer-2 div {
+  margin-top: 1rem;
+}
+.footer-2 div i {
+  font-size: 2rem;
+  color: #5a5a5a;
+}
+.footer-2 div .fa-brands:hover {
+  color: var(--color-7);
+  cursor: pointer;
+}
+.footer-2 span {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.9rem;
+}
+
+main .section_1 {
+  padding-top: 110px !important;
+}
+main .section_1 div div .carousel-item:nth-child(1) {
+  background-image: url("../imgs/index/section1/3.jpg");
+}
+main .section_1 div div .carousel-item:nth-child(2) {
+  background-image: url("../imgs/index/section1/5.jpg");
+}
+main .section_1 div div div {
+  aspect-ratio: 16/9;
+  background-size: cover;
+  background-position: center;
+}
+main .section_1 div div div .contenedor-contenido {
+  color: white;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+}
+main .section_1 div div div .contenedor-contenido h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px black;
+}
+main .section_1 div div div .contenedor-contenido a {
+  text-decoration: none !important;
+}
+main .section_1 div div div .contenedor-contenido .modelos {
+  background-color: white;
+  width: 130px;
+  height: 25px;
+}
+main .section_1 div div div .contenedor-contenido .modelos span {
+  font-size: 0.8rem;
+  color: black;
+}
+main .section_1 div div div .contenedor-contenido .modelos:hover {
+  transition: 1s;
+  cursor: pointer;
+  background-color: rgba(2, 84, 156, 0.8470588235);
+}
+main .section_1 div div div .contenedor-contenido .modelos:hover span {
+  color: white;
+  font-weight: bold;
+}
+main .section_2 h2 {
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.5rem;
+  text-shadow: 0.1px 0.1px 0.1px black;
+}
+main .section_2 .borde {
+  border-bottom: 1.7px solid black;
+  width: 120px;
+  margin: auto;
+  margin-bottom: 1.5rem;
+}
+main .section_2 p {
+  font-size: 0.9rem;
+}
+main .section_3 {
+  background-color: #e3e4e6;
+  padding: 2rem;
+}
+main .section_3 div .section_3-cart {
+  text-align: center;
+}
+main .section_3 div .section_3-cart img {
+  width: 150px;
+}
+main .section_3 div .section_3-cart p {
+  font-size: 0.9rem;
+}
+main .section_4 h2 {
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.8rem;
+  text-shadow: 0.1px 0.1px 0.1px black;
+}
+main .section_4 .borde {
+  border-bottom: 1.7px solid black;
+  width: 120px;
+  margin: auto;
+  margin-bottom: 1.5rem;
+}
+main .section_4 p {
+  text-align: center;
+  font-size: 0.9rem;
+}
+main .section_4 div .borde_azul {
+  border-bottom: 0.1px solid #02539c;
+  font-size: 1.2rem;
+}
+main .section_4 .contenedor-filtros-2 div .descripcion h3 {
+  text-transform: capitalize;
+  color: #02539c;
+  font-size: 1.5rem;
+}
+main .section_4 .contenedor-filtros-2 div .descripcion span:first-of-type {
+  margin: 0.3rem 0 1rem 0;
+  font-weight: 400;
+  font-size: 0.9rem;
+  display: block;
+}
+main .section_4 .contenedor-filtros-2 div .descripcion a {
+  text-decoration: none;
+  color: #02539c !important;
+  font-weight: 600;
+  border-bottom: 1px solid #02539c;
+  line-height: 1;
+}
+main .section_4 .contenedor-filtros-2 div .separador {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.326) !important;
+}
+main .section_4 #verMas {
+  background-color: #02539c;
+  color: white;
+  margin: 0;
+  padding: 0.5rem;
+  margin-top: -0.1rem;
+  border: none;
+}
+main .section_5 {
+  margin-top: 1rem;
+}
+main .section_5 > div {
+  background-color: #e6e6e6;
+  padding: 1.2rem;
+  display: flex; /* Para convertir el div en un contenedor flexible */
+  justify-content: center; /* Para centrar horizontalmente el contenido */
+  position: relative;
+}
+main .section_5 > div span {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .section_6 div h2 {
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.8rem;
+  text-shadow: 0.1px 0.1px 0.1px black;
+}
+main .section_6 div .borde {
+  border-bottom: 1.7px solid black;
+  width: 120px;
+  margin: auto;
+  margin-bottom: 1.5rem;
+}
+main .section_6 div .contenedor-reseñas div .carousel-inner {
+  min-height: 450px;
+}
+main .section_6 div .contenedor-reseñas div .carousel-inner div span {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+main .section_6 div .contenedor-reseñas div .carousel-inner div div img {
+  max-width: 175px;
+}
+main .section_6 div .contenedor-reseñas div .carousel-inner div div {
+  color: #fef445;
+  font-size: 1.5rem;
+}
+main .section_6 div .contenedor-reseñas div .carousel-inner div p {
+  font-size: 0.9rem;
+}
+main .section_6 div .contenedor-reseñas div button {
+  background: rgb(0, 0, 0);
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+  padding: 0.4rem;
+}
+main .section_6 div .vertical {
+  vertical-align: top;
+}
+main .section_7 {
+  background-color: #e6e6e6;
+  padding: 1rem;
+}
+main .section_7 div h2 {
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.8rem;
+  text-shadow: 0.1px 0.1px 0.1px black;
+  color: #0C599F;
+}
+main .section_7 div div span {
+  font-weight: 600;
+}
+main .section_7 div div span span {
+  font-weight: normal;
+  font-size: 1rem;
+}
+main .section_8 div h2 {
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.8rem;
+  text-shadow: 0.1px 0.1px 0.1px black;
+  color: #0C599F;
+}
+main .section_8 div form div div div input {
+  border-radius: 0px;
+  height: 30px;
+}
+main .section_8 div form div div div label {
+  color: rgba(0, 0, 0, 0.505);
+  font-size: 0.9rem;
+}
+main .section_8 div form div div div input:focus {
+  border-color: rgba(12, 88, 159, 0.2156862745);
+  box-shadow: 0 0 0 0.25rem rgba(12, 88, 159, 0.2156862745);
+}
+main .section_8 div form div div div textarea {
+  min-height: 200px !important;
+  border-radius: 0px;
+  font-size: 0.9rem;
+}
+main .section_8 div form div div button {
+  background-color: #0C599F !important;
+  border-radius: 0px;
+  border: #02539c;
+  color: white;
+}
+
+body {
+  min-height: 100vh !important;
+}
+
+main .filtros {
+  padding-top: 120px;
+  position: relative;
+}
+main .filtros div {
+  position: relative;
+}
+main .filtros div div {
+  background-color: #f2f2f2;
+  border: 1px solid #e3e3e3;
+  width: 45%;
+}
+main .filtros .contenedor-ordenar {
+  position: absolute; /* Elemento a posicionar */
+  background-color: #f2f2f2;
+  top: 55px; /* Situar justo debajo del elemento guía */
+  right: 0px; /* Situar en el centro horizontal del padre */
+  background-color: #f2f2f2;
+  opacity: 0;
+  pointer-events: none;
+  width: 140px;
+  padding: 1rem;
+}
+main .filtros .contenedor-ordenar ul li {
+  list-style: none;
+}
+main .contenedor-autos-padre {
+  min-height: 500px;
+}
+main .contenedor-autos-padre .contenedor-autos .card-auto {
+  border: 1px solid #e3e4e6;
+  max-height: 400px;
+}
+main .contenedor-autos-padre .contenedor-autos .card-auto h3 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  text-align: start;
+}
+main .contenedor-autos-padre .contenedor-autos .card-auto div span {
+  font-size: 0.9rem;
+  color: #4e4c4c;
+}
+main .contenedor-autos-padre .contenedor-autos .card-auto > span {
+  color: #02539c;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+main .overdrive {
+  background-color: rgba(38, 37, 37, 0.5882352941);
+  transition: transform 0.3s ease;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 8000;
+  display: none;
+}
+main .categoria .filtro-categoria {
+  width: 70%;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 9999;
+  /* AGREGAR ESTO PARA LOS FILTROS DE LA PAGINA CATALOGO*/
+}
+main .categoria .filtro-categoria div {
+  padding: 0;
+  /* AGREGAR ESTO PARA LOS FILTROS DE LA PAGINA CATALOGO*/
+}
+main .categoria .filtro-categoria div .contenedor-titulo {
+  background-color: #02539c;
+  color: #ffffff;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  z-index: 1000;
+}
+main .categoria .filtro-categoria div .contenedor-titulo h2 {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  margin: 0;
+}
+main .categoria .filtro-categoria div .contenedor-paginas a {
+  text-decoration: none;
+  color: #4d4d4d;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+main .categoria .filtro-categoria div .contenedor-paginas ul li {
+  text-decoration: none;
+  color: #4d4d4d;
+  font-weight: 500;
+  font-size: 1.1rem;
+  list-style-type: none;
+}
+main .categoria .filtro-categoria div div form .titulo-simbolo {
+  border-top: 1px solid rgb(200, 200, 200);
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+main .categoria .filtro-categoria div div form .titulo-simbolo .simbolo {
+  cursor: pointer;
+}
+main .categoria .filtro-categoria div div form .titulo-simbolo h3 {
+  font-size: 1rem;
+  margin: 0;
+  padding: 1rem;
+}
+main .categoria .filtro-categoria div div form .contenedor-filtros {
+  background-color: #e6e6e6;
+  padding: 1rem 0;
+  max-height: 150px;
+  overflow-y: auto;
+}
+main .categoria .filtro-categoria div:last-of-type .footer-2 {
+  position: absolute;
+  bottom: 0;
+}
+main .categoria .filtro-categoria .contenedor-nav-info-filtrar {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+main .categoria .filtro-categoria .contenedor-nav-info-filtrar span {
+  background-color: #f2f2f2;
+  padding: 0.5rem 2rem;
+  min-width: 130px;
+  font-size: 1rem;
+}
+main .categoria .filtro-categoria .contenedor-nav-info-filtrar span:first-of-type {
+  background-color: #02539c;
+  color: #ffffff;
+}
+
+.main_detalle {
+  max-width: 1400px;
+  margin-top: 100px;
+}
+.main_detalle .section_1 {
+  padding-top: 40px !important;
+}
+.main_detalle .section_1 div h2 {
+  text-transform: uppercase;
+  color: var(--color-4);
+}
+.main_detalle .section_1 div .foto-principal {
+  margin-top: 15px;
+}
+.main_detalle .section_1 .contenedor-fondos div div div {
+  margin-top: 15px;
+  border: var(--borde);
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 5px 4px 12px 0px rgba(0, 0, 0, 0.82);
+  -webkit-box-shadow: 5px 4px 12px 0px rgba(0, 0, 0, 0.82);
+  -moz-box-shadow: 5px 4px 12px 0px rgba(0, 0, 0, 0.82);
+  cursor: pointer;
+}
+.main_detalle .section_1 .contenedor-fondos div div div .contenedor-fondos-js {
+  margin: auto;
+  background-size: cover;
+  background-position: center;
+  width: 120px !important;
+  height: 100px !important;
+  display: block;
+}
+.main_detalle .section_1 #carouselExampleCaptions .carousel-indicators {
+  margin-bottom: 0px;
+}
+.main_detalle .section_1 #carouselExampleCaptions .carousel-indicators button {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  margin: 0 5px;
+}
+.main_detalle .section_2 h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main_detalle .section_2 div .contenedor-especificacion {
+  margin-top: -1px;
+}
+.main_detalle .section_2 div .contenedor-especificacion div:first-of-type {
+  border-bottom: var(--borde);
+  border-top: var(--borde);
+  cursor: pointer;
+  padding: 1rem;
+}
+.main_detalle .section_2 div .contenedor-especificacion div:last-of-type span {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+}
+.main_detalle .section_2 div .contenedor-especificacion div:last-of-type .borde-especificacion {
+  max-width: 1px !important;
+  padding: 16px 0px;
+  border: none;
+  border-left: 0.2px solid rgb(206, 197, 197);
+}
+.main_detalle .section_2 div .contenedor-especificacion div:last-of-type .contenedor-descripcion span {
+  max-width: 200px;
+  justify-content: left;
+}
+.main_detalle .section_2 div .contenedor-especificacion .contenedor-descripcion:nth-child(even) {
+  background-color: white; /* fondo azul para elementos pares */
+}
+.main_detalle .section_2 div .contenedor-especificacion .contenedor-descripcion:nth-child(odd) {
+  background-color: #e6e6e6; /* fondo rojo para elementos impares */
+}
+.main_detalle .section_2 .cuadro-especificaciones {
+  border: 1px solid var(--color-2);
+  padding: 20px;
+  margin-top: 40px;
+}
+.main_detalle .section_2 .cuadro-especificaciones div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main_detalle .section_2 .cuadro-especificaciones div div h3 {
+  color: var(--color-5);
+  text-transform: uppercase;
+}
+.main_detalle .section_2 .cuadro-especificaciones div div h3 + span {
+  color: var(--color-2);
+}
+.main_detalle .section_2 .cuadro-especificaciones div > div:nth-of-type(2) > span:first-of-type {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: var(--color-4);
+}
+.main_detalle .section_2 .cuadro-especificaciones div > div:nth-of-type(2) p {
+  color: var(--color-2);
+}
+.main_detalle .section_2 .cuadro-especificaciones div > div:nth-of-type(2) .cuota-especificaciones {
+  color: var(--color-4);
+}
+.main_detalle .section_2 .cuadro-especificaciones div > div:nth-of-type(2) > span:last-of-type {
+  font-size: 0.9rem;
+}
+.main_detalle .section_2 .cuadro-especificaciones div div:last-of-type {
+  background-color: var(--color-4);
+  text-align: center;
+  color: var(--color-1);
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  height: 40px !important;
+}
+.main_detalle .section_3-interes .carousel-sugerencia .card-auto {
+  border: 1px solid #e3e4e6;
+  margin: auto;
+}
+.main_detalle .section_3-interes .carousel-sugerencia .card-auto h3 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  text-align: start;
+  padding-left: 20px;
+}
+.main_detalle .section_3-interes .carousel-sugerencia .card-auto div span {
+  font-size: 0.9rem;
+  color: #4e4c4c;
+  padding-left: 20px;
+}
+.main_detalle .section_3-interes .carousel-sugerencia .card-auto > span {
+  padding-left: 20px;
+  color: #02539c;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.main_detalle .section_3-interes div div button span {
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+}
+
+.main_adjudicados {
+  padding: 0px !important;
+  margin-top: 120px;
+}
+.main_adjudicados .section_1 {
+  padding: 0px !important;
+  height: 200px;
+  background-image: url("../imgs/adjudicados/portada.jpg");
+  background-size: cover;
+}
+.main_adjudicados .section_1 a {
+  text-decoration: none;
+}
+.main_adjudicados .section_1 > div > span:first-of-type {
+  font-size: 2rem;
+  display: block;
+  color: var(--color-1);
+}
+.main_adjudicados .section_1 div {
+  padding: 20px;
+  color: var(--color-1);
+}
+.main_adjudicados .section_1 div .modelos {
+  background-color: var(--color-1);
+  width: 130px;
+  height: 35px;
+  color: var(--color-5);
+  padding: 0px;
+  font-size: 0.9rem;
+}
+.main_adjudicados .section_1 div .modelos:hover {
+  background-color: var(--color-2);
+  cursor: pointer;
+  color: var(--color-1);
+}
+.main_adjudicados > div:first-of-type {
+  background-color: var(--color-4);
+  color: var(--color-1);
+}
+.main_adjudicados .section_2_adjudicados {
+  /*
+  >div:first-of-type {
+      background-color: #a60c0c !important;
+
+      .contenedor-ordenar {
+          position: absolute; 
+          top: 55px; 
+          right: 0px; 
+          opacity: 0;
+          pointer-events: none;
+          width: 140px;
+          padding: 1rem;
+
+          ul {
+              li {
+                  list-style: none;
+              }
+          }
+      }
+  }
+  */
+}
+.main_adjudicados .section_2_adjudicados h2 {
+  color: var(--color-4);
+}
+.main_adjudicados .section_2_adjudicados div div .contenedor-autos-adjudicados {
+  border: var(--borde);
+  padding-bottom: 20px;
+}
+.main_adjudicados .section_2_adjudicados div div .contenedor-autos-adjudicados > div:last-of-type {
+  background-color: var(--color-4);
+  height: 40px;
+  cursor: pointer;
+}
+.main_adjudicados .section_2_adjudicados div div .contenedor-autos-adjudicados > div:last-of-type a {
+  text-decoration: none;
+  color: var(--color-1);
+}
+.main_adjudicados .section_2_adjudicados div div .contenedor-autos-adjudicados div:last-of-type:hover {
+  background-color: var(--color-6);
+}
+.main_adjudicados .section_2_adjudicados div #verMas {
+  background-color: #02539c;
+  color: white;
+  margin: 0;
+  padding: 0.5rem;
+  margin-top: -0.1rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
+.main_vendeTuAuto {
+  padding: 0px !important;
+  margin-top: 120px;
+  text-shadow: 3px 3px 16px black;
+}
+.main_vendeTuAuto .section_1 {
+  padding: 0px !important;
+  height: 200px;
+  background-image: url("../imgs/vendeTuAuto/portada.webp");
+  background-size: cover;
+}
+.main_vendeTuAuto a {
+  text-decoration: none;
+}
+.main_vendeTuAuto div {
+  padding: 20px;
+  color: var(--color-1);
+}
+.main_vendeTuAuto div .modelos {
+  background-color: var(--color-1);
+  width: 130px;
+  height: 35px;
+  color: var(--color-5);
+  padding: 0px;
+  font-size: 0.9rem;
+}
+.main_vendeTuAuto div .modelos:hover {
+  background-color: var(--color-2) !important;
+  cursor: pointer;
+  color: var(--color-1) !important;
+}
+.main_vendeTuAuto > div:first-of-type {
+  background-color: var(--color-4);
+  color: var(--color-1);
+}
+
+.section_2_adjudicados .tarjetas-vender {
+  background-color: var(--color-8);
+  border: var(--borde);
+  min-height: 350px;
+  max-width: 350px;
+}
+.section_2_adjudicados .tarjetas-vender h3 {
+  color: var(--color-4);
+}
+.section_2_adjudicados .tarjetas-vender p {
+  font-size: 0.9rem;
+}
+
+.section_3_adjudicados {
+  padding: 2rem 1rem;
+  background-color: var(--color-8);
+}
+.section_3_adjudicados .alto_300 {
+  height: 300px !important;
+}
+.section_3_adjudicados div h2 {
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.8rem;
+  text-shadow: 0.1px 0.1px 0.1px black;
+  color: #0C599F;
+}
+.section_3_adjudicados div form div div div input {
+  border-radius: 0px;
+  height: 30px;
+}
+.section_3_adjudicados div form div div div label {
+  color: rgba(0, 0, 0, 0.505);
+  font-size: 0.9rem;
+}
+.section_3_adjudicados div form div div div input:focus {
+  border-color: rgba(12, 88, 159, 0.2156862745);
+  box-shadow: 0 0 0 0.25rem rgba(12, 88, 159, 0.2156862745);
+}
+.section_3_adjudicados div form div div div textarea {
+  min-height: 200px !important;
+  border-radius: 0px;
+  font-size: 0.9rem;
+}
+.section_3_adjudicados div form div div button {
+  background-color: #0C599F !important;
+  border-radius: 0px;
+  border: #02539c;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.1s linear;
+}
+
+:root {
+  --fondo-1: #ff084e;
+  --fondo-2: #b8b8b8;
+  --fondo-3: #3a3a3a;
+  --color-1: #ffffff;
+  --color-2: #9f9f9f;
+  --color-3: #3a3a3a;
+  --color-4: #02539c;
+  --color-5: #373737;
+  --color-6: #033d71;
+  --color-7: #000000;
+  --color-8: #ebebeb;
+  --borde: 1px solid rgba(128, 128, 128, 0.541);
+}
+
+@media (min-width: 490px) {
+  p {
+    font-size: 1rem !important;
+  }
+  span {
+    font-size: 1rem;
+  }
+  main {
+    max-width: 2000px;
+  }
+  header .nav-info section:first-of-type {
+    height: 50px;
+  }
+  header .nav-info section:first-of-type span {
+    font-size: 0.9rem;
+  }
+  header .nav-info section:last-of-type {
+    height: 100px;
+  }
+  header .nav-info section:last-of-type div img {
+    height: 65px;
+  }
+  header .nav-info section:last-of-type div i {
+    font-size: 1.3rem;
+  }
+  header .nav-info section:last-of-type div:first-of-type {
+    display: flex;
+    align-items: center;
+  }
+  header .nav-mobile .filtros-mobile div .contenedor-titulo h2 {
+    font-size: 2.2rem;
+  }
+  header .nav-mobile .filtros-mobile div .contenedor-titulo i {
+    font-size: 1.5rem;
+  }
+  header .nav-mobile .filtros-mobile div .contenedor-paginas a {
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+  header .nav-mobile .filtros-mobile div .contenedor-paginas div ul li a {
+    font-size: 1.5rem;
+  }
+  header .nav-mobile .filtros-mobile div:last-of-type div div i {
+    font-size: 2rem;
+  }
+  header .nav-mobile .filtros-mobile div:last-of-type div span {
+    font-size: 1.2rem;
+  }
+  main .filtros {
+    padding-top: 150px;
+  }
+  main .contenedor-autos {
+    gap: 20px;
+  }
+  main .contenedor-autos .card-auto {
+    width: calc(50% - 20px);
+  }
+  main .contenedor-autos .card-auto h3 {
+    min-height: 45px;
+  }
+  main .section_1 div div div .contenedor-contenido h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px black;
+  }
+  main .section_1 div div div .contenedor-contenido .modelos {
+    background-color: white;
+    width: 150px;
+    height: 35px;
+  }
+  main .section_1 div div div .contenedor-contenido .modelos span {
+    font-size: 1rem;
+    color: black;
+  }
+  main .section_2 {
+    padding: 0.5rem 1.5rem !important;
+  }
+  main .section_4 .contenedor-filtros-2 {
+    gap: 20px;
+  }
+  main .section_4 .contenedor-filtros-2 div .descripcion h3 {
+    font-size: 2rem;
+    min-height: 70px;
+  }
+  main .section_4 .contenedor-filtros-2 div .descripcion span:first-of-type {
+    font-size: 1.1rem;
+  }
+  main .section_4 .contenedor-filtros-2 div .descripcion a {
+    font-size: 1.2rem;
+  }
+  main .section_5 div:first-of-type .carousel-inner {
+    max-width: 600px;
+  }
+  main .section_5 div:first-of-type .carousel-inner div img {
+    aspect-ratio: 16/9;
+  }
+  main .section_6 > div .contenedor_mobil {
+    max-width: 500px;
+  }
+  .main_adjudicados .section_1, .main_vendeTuAuto .section_1 {
+    height: 250px;
+  }
+  .main_adjudicados > div:first-of-type, .main_vendeTuAuto > div:first-of-type {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_adjudicados .section_2_adjudicados div div .contenedor-autos-adjudicados, .main_vendeTuAuto .section_2_adjudicados div div .contenedor-autos-adjudicados {
+    width: 60%;
+  }
+}
+@media (min-width: 600px) {
+  main .section_1 div div div {
+    max-height: 550px;
+  }
+  main .section_1 div div div h2 {
+    font-size: 2rem !important;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px black;
+  }
+  main .section_1 div div div .modelos {
+    background-color: white;
+    width: 200px !important;
+    height: 25px;
+  }
+  main .section_1 div div div .modelos span {
+    font-size: 0.8rem;
+    color: black;
+  }
+  .main_adjudicados .section_1, .main_vendeTuAuto .section_1 {
+    height: 300px;
+  }
+  .main_adjudicados > div:first-of-type, .main_vendeTuAuto > div:first-of-type {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_adjudicados .section_2_adjudicados div div .contenedor-autos-adjudicados, .main_vendeTuAuto .section_2_adjudicados div div .contenedor-autos-adjudicados {
+    width: calc(50% - 20px);
+    position: relative;
+    min-height: 450px;
+    margin: 10px;
+    max-width: 320px;
+  }
+  .main_adjudicados .section_2_adjudicados div div .contenedor-autos-adjudicados > div:last-of-type, .main_vendeTuAuto .section_2_adjudicados div div .contenedor-autos-adjudicados > div:last-of-type {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+@media (min-width: 700px) {
+  main .section_1 div div div {
+    max-height: 550px;
+  }
+  main .section_1 div div div h2 {
+    font-size: 2.5rem !important;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px black;
+  }
+  main .section_1 div div div .modelos {
+    background-color: white;
+    width: 200px !important;
+    height: 50px !important;
+  }
+  main .section_1 div div div .modelos span {
+    font-size: 0.8rem;
+    color: black;
+  }
+  main .categoria .filtro-categoria {
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 9000;
+  }
+  main .contenedor-autos .card-auto {
+    width: calc(45% - 20px);
+  }
+}
+@media (min-width: 768px) {
+  header .nav-destokp {
+    padding: 1.5rem;
+  }
+  header .nav-destokp div {
+    display: flex;
+    align-items: center;
+  }
+  header .nav-destokp div ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  header .nav-destokp div ul li {
+    position: relative;
+    list-style: none;
+    padding-left: 1rem;
+  }
+  header .nav-destokp div ul li a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: black;
+  }
+  header .nav-destokp div ul li > a:hover {
+    cursor: pointer;
+    color: #02539c !important;
+    font-weight: bold;
+    transition: 0.1s;
+    border-bottom: 3px solid #02539c;
+  }
+  header .nav-destokp div ul li .enlaces:hover {
+    font-weight: 400;
+    color: var(--color-1) !important;
+    border-bottom: 1px solid var(--color-1) !important;
+  }
+  header .nav-destokp div ul li .menu-desplegable {
+    top: 40px;
+    right: 0;
+    width: 180px;
+    height: 70px;
+    position: absolute;
+    background-color: #02539c;
+    opacity: 0;
+    pointer-events: none;
+    transition: max-width 0.35s ease; /* Transición de la anchura máxima */
+  }
+  header .nav-destokp div ul li .menu-desplegable .triangulo {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 17.32px solid #02539c;
+  }
+  header .nav-destokp div ul li .menu-desplegable a {
+    color: #fff;
+  }
+  header .nav-destokp div > .vende {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 0.5rem 1.5rem;
+    transition: background-color 1s;
+  }
+  header .nav-destokp div .vende:hover {
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #02539c; /* Cambia el color de fondo a azul al pasar el ratón */
+    color: white; /* Color de texto azul al pasar el ratón */
+  }
+  .main_detalle {
+    margin-top: 140px;
+  }
+  .main_detalle .section_1 .cuadro-especificaciones {
+    border: 1px solid var(--color-2);
+    padding: 20px;
+    margin-top: 40px;
+  }
+  .main_detalle .section_1 .cuadro-especificaciones div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .main_detalle .section_1 .cuadro-especificaciones div div h3 {
+    color: var(--color-5);
+    text-transform: uppercase;
+  }
+  .main_detalle .section_1 .cuadro-especificaciones div div h3 + span {
+    color: var(--color-2);
+  }
+  .main_detalle .section_1 .cuadro-especificaciones div > div:nth-of-type(2) > span:first-of-type {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: var(--color-4);
+  }
+  .main_detalle .section_1 .cuadro-especificaciones div > div:nth-of-type(2) p {
+    color: var(--color-2);
+  }
+  .main_detalle .section_1 .cuadro-especificaciones div > div:nth-of-type(2) .cuota-especificaciones {
+    color: var(--color-4);
+  }
+  .main_detalle .section_1 .cuadro-especificaciones div > div:nth-of-type(2) > span:last-of-type {
+    font-size: 0.9rem;
+  }
+  .main_detalle .section_1 .cuadro-especificaciones div div:last-of-type {
+    background-color: var(--color-4);
+    text-align: center;
+    color: var(--color-1);
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    height: 40px !important;
+  }
+  .section_2_adjudicados .tarjetas-vender {
+    background-color: var(--color-8);
+    border: var(--borde);
+    min-height: 350px;
+    max-width: 50%;
+  }
+  .section_2_adjudicados .tarjetas-vender h3 {
+    font-size: 2rem;
+    color: var(--color-4);
+  }
+  .section_2_adjudicados .tarjetas-vender p {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 900px) {
+  main .contenedor-autos .card-auto {
+    width: calc(30% - 20px);
+  }
+  .main_adjudicados .section_1, .main_vendeTuAuto .section_1 {
+    height: 350px;
+  }
+  .main_adjudicados .section_1 div, .main_vendeTuAuto .section_1 div {
+    padding: 20px;
+    color: var(--color-1);
+  }
+  .main_adjudicados .section_1 div h2, .main_vendeTuAuto .section_1 div h2 {
+    font-size: 3rem;
+  }
+  .main_adjudicados .section_1 div > span, .main_vendeTuAuto .section_1 div > span {
+    font-size: 1.5rem;
+  }
+  .main_adjudicados .section_1 div .modelos, .main_vendeTuAuto .section_1 div .modelos {
+    background-color: var(--color-1);
+    width: 180px;
+    height: 50px;
+    color: var(--color-5);
+    padding: 0px;
+    font-size: 0.9rem;
+  }
+  .main_adjudicados .section_1 div .modelos span, .main_vendeTuAuto .section_1 div .modelos span {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 992px) {
+  .section_2_adjudicados .tarjetas-vender {
+    padding: 10px;
+    padding-top: 0;
+    width: 33%;
+    margin: 20px;
+    background-color: var(--color-8);
+    border: var(--borde);
+    min-height: 380px !important;
+  }
+  .section_2_adjudicados .tarjetas-vender h3 {
+    font-size: 1.3rem;
+    color: var(--color-4);
+  }
+  .section_2_adjudicados .tarjetas-vender p {
+    font-size: 0.9rem;
+  }
+  .main_vendeTuAuto + main {
+    margin: auto;
+  }
+  .section_3_adjudicados .foto_form {
+    background-image: url("../imgs/vendeTuAuto/auto_form.png");
+    background-size: cover;
+    height: auto;
+  }
+  .section_3_adjudicados .alto_300 {
+    height: 200px !important;
+  }
+  .section_3_adjudicados > div:last-of-type form div > div:last-of-type {
+    margin-left: 0px !important;
+  }
+  .main_detalle {
+    margin-top: 160px;
+  }
+  .main_detalle .section_1 {
+    padding-top: 40px !important;
+    justify-content: center;
+  }
+  .main_detalle .section_1 div h2 {
+    text-transform: uppercase;
+    color: var(--color-4);
+  }
+  .main_detalle .section_1 div .foto-principal {
+    margin-top: 15px;
+  }
+  .main_detalle .section_1 .contenedor-fondos div div div {
+    margin-top: 15px;
+    border: var(--borde);
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 4px 12px 0px rgba(0, 0, 0, 0.82);
+    -webkit-box-shadow: 5px 4px 12px 0px rgba(0, 0, 0, 0.82);
+    -moz-box-shadow: 5px 4px 12px 0px rgba(0, 0, 0, 0.82);
+    cursor: pointer;
+  }
+  .main_detalle .section_1 .contenedor-fondos div div div .contenedor-fondos-js {
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    width: 100% !important;
+    height: 60px !important;
+    display: block;
+  }
+  .main_detalle .section_2 div .cuadro-especificaciones {
+    min-height: 420px;
+  }
+  .main_catalogo {
+    margin-top: 180px;
+  }
+  .main_catalogo .contenedor-autos {
+    gap: 30px;
+  }
+  .main_catalogo .contenedor-autos .card-auto {
+    width: calc(33% - 20px);
+    margin-top: 0 !important;
+  }
+  .main_catalogo div .categoria2 .filtro-categoria div .contenedor-titulo h2 {
+    font-weight: 500;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    color: #373737;
+    font-size: 1.6rem;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    margin: 0px;
+  }
+  .main_catalogo div .categoria2 .filtro-categoria div div form .titulo-simbolo {
+    cursor: pointer;
+    border-bottom: 1px solid rgb(200, 200, 200);
+  }
+  .main_catalogo div .categoria2 .filtro-categoria div div form .titulo-simbolo h3 {
+    font-weight: 450;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    margin: 0px;
+  }
+  .main_catalogo div .categoria2 .filtro-categoria div div form .contenedor-filtros {
+    padding: 1rem 0;
+  }
+  .main_catalogo div .categoria2 .filtro-categoria div div form .contenedor-filtros div input {
+    cursor: pointer;
+  }
+  .main_catalogo div .categoria2 .filtro-categoria div div form .contenedor-filtros div label {
+    pointer-events: none;
+  }
+  .main_catalogo div .categoria2 .filtro-categoria div div .modelo .contenedor-filtros {
+    max-height: 200px;
+    overflow: auto;
+  }
+  .main_catalogo div div {
+    position: relative;
+  }
+  .main_catalogo div div li {
+    list-style: none;
+    text-align: center;
+  }
+  .main_catalogo div div .menu-desplegable2 {
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 10;
+    top: 65px;
+    right: 20px;
+    width: 150px;
+    height: 70px;
+    position: absolute;
+    background-color: #e3e4e6;
+    transition: max-width 0.35s ease; /* Transición de la anchura máxima */
+  }
+  .main_catalogo div div .menu-desplegable2 .triangulo {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 17.32px solid #e3e4e6;
+  }
+  .main_catalogo div div .menu-desplegable2 span {
+    color: #000000;
+  }
+  .main_catalogo div .caja-filtros div span {
+    cursor: pointer;
+  }
+  main .section_5 .tarjetas-pc div div {
+    position: relative;
+  }
+  main .section_5 .tarjetas-pc div div span {
+    left: 50%;
+  }
+  main .section_6 div .contenedor_pc #carruselPC .carousel-inner .carousel-item {
+    padding-left: 20px;
+  }
+  main .section_6 div .contenedor_pc #carruselPC .carousel-inner .carousel-item > div {
+    width: 30%;
+    color: #212529;
+  }
+  .main_adjudicados .section_1, .main_vendeTuAuto .section_1 {
+    height: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  p {
+    font-size: 1.1rem !important;
+  }
+  main .filtros {
+    padding-top: 150px;
+  }
+  main .filtros div {
+    cursor: pointer;
+  }
+  main .contenedor-autos {
+    gap: 30px;
+  }
+  main .contenedor-autos .card-auto {
+    width: calc(33% - 20px);
+    margin-top: 0 !important;
+  }
+  main .contenedor-autos .card-auto h3 {
+    min-height: 45px;
+  }
+  main .section_4 .contenedor-filtros-2-tarjetas {
+    width: 30%;
+  }
+  main .section_4 .contenedor-filtros-2-tarjetas div .descripcion h3 {
+    font-size: 2rem;
+  }
+  main .section_4 .contenedor-filtros-2-tarjetas div .descripcion span:first-of-type {
+    font-size: 1.1rem;
+  }
+  main .section_4 .contenedor-filtros-2-tarjetas div .descripcion a {
+    font-size: 1.2rem;
+  }
+  .main_adjudicados .section_1, .main_vendeTuAuto .section_1 {
+    height: 450px;
+  }
+}
+@media (min-width: 1400px) {
+  main .filtros {
+    padding-top: 150px;
+  }
+  main .contenedor-autos {
+    gap: 40px;
+  }
+  main .contenedor-autos .card-auto {
+    width: calc(25% - 30px);
+    margin-top: 0 !important;
+  }
+  main .contenedor-autos .card-auto h3 {
+    min-height: 45px;
+  }
+  main .section_1 div div div {
+    max-height: 600px;
+  }
+  .main_adjudicados .section_1, .main_vendeTuAuto .section_1 {
+    height: 550px;
+  }
+}/*# sourceMappingURL=style.css.map */

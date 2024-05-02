@@ -1,0 +1,287 @@
+// Arreglos con el contenido de cada filtro
+let arrayMarcas = ["peugeot", "fiat", "vw"]
+let arrayModelos = ["fiorino", "cronos", "toro", "pulse", "strada", "virtus", "amarok", "taos", "saveiro", "polo", "208", "partner"]
+let arrayCombustible = ["nafta", "diesel"]
+let arrayCaja = ["caja manual", "caja automatica"]
+let arrayPuertas = ["2 puertas", "4 puertas", "5 puertas"]
+let arrayPlan = ["100%", "90 / 10", "80 / 20", "70 / 30", "60 / 40"]
+let arrayCuotas = ["84 cuotas", "100 cuotas"]
+
+function generarDinamicamenteFiltros(clase, x, id, titulo, contador){
+    let i = 0
+
+    let claseSeleccionada = document.querySelector(clase)
+    let contenedor2 = document.createElement("div")
+    contenedor2.setAttribute("class", "contenedor-filtros")
+    contenedor2.setAttribute("style", "display:none")
+
+    let tituloFiltro = document.createElement("h3")
+    tituloFiltro.textContent = titulo
+
+    let simbolo = document.createElement("span")
+    simbolo.setAttribute("class", "simbolo me-4")
+    simbolo.setAttribute("data", contador)
+    simbolo.textContent = "+"
+
+    let contenedor3 = document.createElement("div")
+    contenedor3.setAttribute("class", "d-flex align-items-center justify-content-between titulo-simbolo")
+
+    contenedor3.append(tituloFiltro,simbolo)
+    claseSeleccionada.append(contenedor3, contenedor2)
+
+    //! Muestra los filtros y los oculta al clickear
+
+    simbolo.addEventListener("click", function() {
+        if (contenedor2.style.display == "none") {
+            contenedor2.style.display = "block"
+        } else {
+            contenedor2.style.display = "none"
+        }
+    });
+
+    x.forEach(el => {
+        // genero dinamicamente los inputs
+
+        let cheackbox = document.createElement("input")
+        cheackbox.setAttribute("type", "checkbox")
+        cheackbox.setAttribute("class", "ms-4 boton")
+        cheackbox.setAttribute("id", `${id}${i}`)
+        cheackbox.setAttribute("name", id)
+        cheackbox.setAttribute("data", x[i])
+
+        let nombre = document.createElement("label")
+        nombre.setAttribute("class", "ms-3 text-capitalize")
+        nombre.setAttribute("for", `${id}${i}`)
+        nombre.textContent = x[i]
+
+        let contenedor = document.createElement("div")
+
+        contenedor.append(cheackbox, nombre)
+        contenedor2.append(contenedor)
+        i++
+
+        cheackbox.addEventListener("click", function(){
+            //! Obtengo el valor "DATA" del cheackbox seleccionado
+            let botonSeleccionado = this.getAttribute("data");
+            let contenedorProductos = document.querySelectorAll(".card-auto")
+            
+            
+            // Recorro todos los productos del array //!"PRODUCTOS" para poder filtrarlos
+            for (let elemento of contenedorProductos) {
+
+                //! Valor es = al data del elemento generado dinamicamente del hmtl
+                let valor = elemento.dataset.marca
+
+                // Comparo Valor con "botonSeleccionado" (que es el data pero del cheackbox)
+                if (botonSeleccionado !== valor){
+                    elemento.style.display = "none"
+                } else {
+                    elemento.style.display = "block"
+                }
+            }
+        });
+    });
+}
+
+/*
+generarDinamicamenteFiltros(".marca", arrayMarcas, "miMarca", "marca", 0)
+generarDinamicamenteFiltros(".modelo", arrayModelos, "miModelo", "modelo", 1)
+generarDinamicamenteFiltros(".combustible", arrayCombustible, "miCombustible", "combustible", 2)
+*/
+
+/*
+    let contenedor = document.querySelector(".contenedor-filtros")
+if (contenedor2.style.display == "none") {
+    contenedor2.style.display = "block"
+} else {
+    contenedor2.style.display = "none"
+}
+*/
+
+//! Generador de tarjetas para los filtros
+
+
+
+// Función para imprimir las propiedades del vehículo
+
+
+
+
+// Imprimir detalles del vehículo utilizando la función creada
+
+<div class="row d-flex justify-content-end nav-mobile">
+    <section class="col-12 filtros-mobile">
+        <div class="row">
+
+            <div class="d-flex align-items-center contenedor-titulo me-5">
+                <h2 class="col-12">filtros</h2>
+                <i class="fa-solid fa-xmark" id="cerrar"></i>
+            </div>
+
+            <div class="col-12">
+                <form class="marca">         <!--! GENERO DIANMICAMENTE O HAGO APARECER LOS FILTOS -->
+                    <div class="d-flex align-items-center justify-content-between titulo-simbolo">
+                        <h3>Marca</h3>
+                        <span class="simbolo me-4" data="0">+</span>
+                    </div>
+                    <div class="contenedor-filtros" style="display:none">
+                        <div>
+                            <input type="checkbox" class="ms-4 boton botonMarca" id="miMarca0" name="miMarca" data="peugeot" data-condicion="false">
+                            <label class="ms-3 text-capitalize" for="miMarca0">peugeot</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="ms-4 boton botonMarca" id="miMarca1" name="miMarca" data="fiat" data-condicion="false">
+                            <label class="ms-3 text-capitalize" for="miMarca1">fiat</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="ms-4 boton botonMarca" id="miMarca2" name="miMarca" data="vw" data-condicion="false">
+                            <label class="ms-3 text-capitalize" for="miMarca2">vw</label>
+                        </div>
+                    </div>
+                </form>
+                <form class="modelo">        <!--! GENERO DIANMICAMENTE O HAGO APARECER LOS FILTOS -->
+                    <div class="d-flex align-items-center justify-content-between titulo-simbolo">
+                        <h3>Modelo</h3>
+                        <span class="simbolo me-4" data="1">+</span>
+                    </div>  
+                    <div class="contenedor-filtros" style="display: none;">
+                        <div>
+                            <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo0" name="miModelo" data="fiorino">
+                            <label class="ms-3 text-capitalize" for="miModelo0">fiorino</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo1" name="miModelo" data="cronos">
+                            <label class="ms-3 text-capitalize" for="miModelo1">cronos</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo2" name="miModelo" data="toro">
+                            <label class="ms-3 text-capitalize" for="miModelo2">toro</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo3" name="miModelo" data="pulse">
+                            <label class="ms-3 text-capitalize" for="miModelo3">pulse</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo4" name="miModelo" data="strada">
+                            <label class="ms-3 text-capitalize" for="miModelo4">strada</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo5" name="miModelo" data="virtus">
+                            <label class="ms-3 text-capitalize" for="miModelo5">virtus</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo6" name="miModelo" data="amarok">
+                            <label class="ms-3 text-capitalize" for="miModelo6">amarok</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo7" name="miModelo" data="taos">
+                            <label class="ms-3 text-capitalize" for="miModelo7">taos</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo8" name="miModelo" data="saveiro">
+                            <label class="ms-3 text-capitalize" for="miModelo8">saveiro</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo9" name="miModelo" data="polo">
+                            <label class="ms-3 text-capitalize" for="miModelo9">polo</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo10" name="miModelo" data="208">
+                            <label class="ms-3 text-capitalize" for="miModelo10">208</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo11" name="miModelo" data="partner">
+                            <label class="ms-3 text-capitalize" for="miModelo11">partner</label>
+                        </div>
+                    </div>
+                </form>
+                <form class="combustible">   <!--! GENERO DIANMICAMENTE O HAGO APARECER LOS FILTOS -->
+                    <div class="d-flex align-items-center justify-content-between titulo-simbolo">
+                        <h3>combustible</h3>
+                        <span class="simbolo me-4" data="2">+</span>
+                    </div>
+                    <div class="contenedor-filtros" style="display: none;">
+                        <div>
+                            <input type="checkbox" class="ms-4 boton" id="miCombustible0" name="miCombustible" data="nafta">
+                            <label class="ms-3 text-capitalize" for="miCombustible0">nafta</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="ms-4 boton" id="miCombustible1" name="miCombustible" data="diesel">
+                            <label class="ms-3 text-capitalize" for="miCombustible1">diesel</label>
+                        </div>
+                    </div>
+                </form>
+                <form class="caja">          <!--! GENERO DIANMICAMENTE O HAGO APARECER LOS FILTOS -->
+                    <div class="d-flex align-items-center justify-content-between titulo-simbolo">
+                        <h3>Tipo de caja</h3>
+                        <span class="simbolo me-4" data="2">+</span>
+                    </div>
+                    <div class="contenedor-filtros" style="display: none;">
+                        <div>
+                            <input type="checkbox" class="ms-4 boton" id="miCaja0" name="miCaja" data="manual">
+                            <label class="ms-3 text-capitalize" for="miCaja0">Caja manual</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="ms-4 boton" id="miCaja1" name="miCaja" data="automatica">
+                            <label class="ms-3 text-capitalize" for="miCaja1">Caja automatica</label>
+                        </div>
+                    </div>
+                </form>
+                <form class="puertas">       <!--! GENERO DIANMICAMENTE O HAGO APARECER LOS FILTOS -->
+                    <div class="d-flex align-items-center justify-content-between titulo-simbolo">
+                        <h3>Cantidad de puertas</h3>
+                        <span class="simbolo me-4" data="2">+</span>
+                    </div>
+                    <div class="contenedor-filtros" style="display: none;">
+                        <div>
+                            <input type="checkbox" class="ms-4 boton" id="miPuerta0" name="miPuerta" data="2">
+                            <label class="ms-3 text-capitalize" for="miPuerta0">2 puertas</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="ms-4 boton" id="miPuerta1" name="miPuerta" data="4">
+                            <label class="ms-3 text-capitalize" for="miPuerta1">4 puertas</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="ms-4 boton" id="miPuerta2" name="miPuerta" data="5">
+                            <label class="ms-3 text-capitalize" for="miPuerta2">5 puertas</label>
+                        </div>
+                    </div>
+                </form>
+                <form class="plan">          <!--! GENERO DIANMICAMENTE O HAGO APARECER LOS FILTOS -->
+                    <div class="d-flex align-items-center justify-content-between titulo-simbolo">
+                        <h3>Tipo de plan</h3>
+                        <span class="simbolo me-4" data="2">+</span>
+                    </div>
+                    <div class="contenedor-filtros" style="display: none;">
+                        <div>
+                            <input type="checkbox" class="ms-4 boton" id="miPlan0" name="miPlan" data="100">
+                            <label class="ms-3 text-capitalize" for="miPlan0">100%</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="ms-4 boton" id="miPlan1" name="miPlan" data="90">
+                            <label class="ms-3 text-capitalize" for="miPlan1">90/10</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="ms-4 boton" id="miPlan2" name="miPlan" data="80">
+                            <label class="ms-3 text-capitalize" for="miPlan2">80/20</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="ms-4 boton" id="miPlan3" name="miPlan" data="70">
+                            <label class="ms-3 text-capitalize" for="miPlan3">70/30</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="ms-4 boton" id="miPlan4" name="miPlan" data="60">
+                            <label class="ms-3 text-capitalize" for="miPlan4">60/40</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="contenedor-filtros-filtrar d-flex col-12 justify-content-evenly">
+                <span class="text-center mt-3" id="filtrar">Aplicar</span>
+                <span class="text-center mt-3" id="restablecer">Limpiar</span>
+            </div>
+          
+        </div>
+    </section>
+</div>

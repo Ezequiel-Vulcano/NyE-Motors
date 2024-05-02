@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes de ahorro</title>
+    <link rel="icon" href="../imgs/header/logo-negro.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../scss/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d906409094.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1 class="d-none">N&E Motors</h1>
+    <header class="container-fluid">
+        <div class="row nav-info">
+            <section class="col-12 d-flex justify-content-evenly align-items-center justify-content-lg-evenly">
+                    <span class="d-flex align-items-center d-none d-md-block">
+                        <i class="fa-solid fa-location-dot me-2"></i>
+                        Martin Fierro 3250, Villa Udaondo
+                    </span>
+                    <span class="d-flex align-items-center m-4">
+                        <i class="fa-solid fa-phone me-2"></i>0800-362-0085
+                    </span>
+                    <span class="d-flex align-items-center">
+                        <i class="fa-solid fa-envelope me-2"></i>adm.nyemotors@gmail.com
+                    </span>
+            </section>
+            <section class="col-12 mt-3 pb-3 d-flex justify-content-between d-md-none">
+                <div>
+                    <a href="../index.html">
+                        <img src="../imgs/header/logo-negro.svg" alt="logo de la empresa">
+                    </a>   
+                </div>
+                <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-bars" id="navegacion"></i>
+                </div>
+            </section>
+            <section class="col-12 mt-3 pb-3 d-flex justify-content-between d-none d-md-flex nav-destokp">
+                <div>
+                    <a href="../index.html">
+                        <img src="../imgs/header/logo-negro.svg" alt="logo de la empresa">
+                    </a>   
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="../index.html#contacto">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="../index.html#section_6">Testimonios</a>
+                        </li>
+                        <li>
+                            <a href="../index.html#section_2">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#" id="planes">Planes</a>
+                            <div class="triangulo"></div>
+                            <div class="menu-desplegable">
+                                <div class="triangulo"></div>
+                                <ul class="d-flex flex-column">
+                                    <li>
+                                        <a href="#" class="fw-bold enlaces">Planes de ahorro</a>
+                                    </li>
+                                    <li>
+                                        <a href="./page_3.html" class="enlaces">Planes adjudicados</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="../pages/page_4.html" class="vende">Vende tu auto</a>
+                </div>
+            </section>
+        </div>
+
+        <div class="row d-flex justify-content-end nav-mobile">
+            <section class="col-12 filtros-mobile">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between contenedor-titulo align-items-center me-5">
+                        <h2>Menu</h2>
+                        <i class="fa-solid fa-xmark cerrar"></i>
+                    </div>
+                    <div class="col-12 d-flex flex-column contenedor-paginas p-4">
+                        <a href="../index.html#contacto" class="mt-3">Contacto</a>
+                        <a href="../index.html#section_2" class="mt-3">Testimonios</a>
+                        <a href="../index.html#section_6" class="mt-3">Nosotros</a>
+                        <a href="../pages/page_4.html" class="mt-3">Vende tu auto</a>
+
+
+                        <!--! BARRA DE BOOSTRAP PARA COLAPSAR ELEENTOS -->
+                        <a class="mt-3" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Planes
+                        </a>
+                        <div class="collapse" id="collapseExample">
+                            <ul>
+                                <li class="mt-4">
+                                    <a href="#" class="fw-bold enlaces">Planes de ahorro</a>
+                                </li>
+                                <li class="mt-2">
+                                    <a href="./page_3.html">Planes adjudicados</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="footer-2 col-12">
+                        <div class="d-flex justify-content-center">
+                            <i class="fa-brands fa-square-facebook p-2"></i>
+                            <i class="fa-brands fa-instagram p-2"></i>
+                            <i class="fa-brands fa-whatsapp p-2"></i>
+                        </div>
+                        <span class="text-center">N&E Motors © 2023, todos los derechos reservados.</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <main class="container-fluid main_catalogo">
+
+        <div class="overdrive">
+        </div>
+        
+        <section class="row filtros d-lg-none">
+            <div class="col-12 d-flex justify-content-evenly mt-4 mb-4">
+                <div class="p-2" id="ventanaFiltrar">Filtrar por</div>
+                <div class="p-2 d-flex justify-content-between" id="ordenar">Ordenar por 
+                    <span id="simboloOrdenar">+</span>
+                    <div class="d-flex flex-column contenedor-ordenar col-5 pt-3 pb-3">
+                        <ul class="p-0 m-0">
+                            <li class="mayor-precio">
+                                <span>Mayor precio</span>
+                            </li>
+                            <li class="menor-precio">
+                                <span>Menor precio</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </section>
+
+        <div class="row d-flex justify-content-end categoria d-lg-none">
+            <section class="filtro-categoria">
+                <div class="row">
+        
+                    <div class="d-flex align-items-center contenedor-titulo me-5">
+                        <h2 class="col-12">filtros</h2>
+                        <i class="fa-solid fa-xmark" id="cerrarFiltro"></i>
+                    </div>
+        
+                    <div class="col-12">
+                        <form class="marca">         <!--! GENERO DIANMICAMENTE O HAGO APARECER LOS FILTOS -->
+                            <div class="d-flex align-items-center justify-content-between titulo-simbolo">
+                                <h3>Marca</h3>
+                                <span class="simbolo me-4" data="0">+</span>
+                            </div>
+                            <div class="contenedor-filtros" style="display:none">
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton botonMarca" id="miMarca0" name="miMarca" data="peugeot" data-condicion="false">
+                                    <label class="ms-3 text-capitalize" for="miMarca0">peugeot</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton botonMarca" id="miMarca1" name="miMarca" data="fiat" data-condicion="false">
+                                    <label class="ms-3 text-capitalize" for="miMarca1">fiat</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton botonMarca" id="miMarca2" name="miMarca" data="vw" data-condicion="false">
+                                    <label class="ms-3 text-capitalize" for="miMarca2">vw</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton botonMarca" id="miMarca3" name="miMarca" data="renault" data-condicion="false">
+                                    <label class="ms-3 text-capitalize" for="miMarca3">Renauldt</label>
+                                </div>
+                            </div>
+                        </form>
+                        <form class="modelo">        <!--! GENERO DIANMICAMENTE O HAGO APARECER LOS FILTOS -->
+                            <div class="d-flex align-items-center justify-content-between titulo-simbolo">
+                                <h3>Modelo</h3>
+                                <span class="simbolo me-4" data="1">+</span>
+                            </div>  
+                            <div class="contenedor-filtros" style="display: none;">
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo0" name="miModelo" data="fiorino">
+                                    <label class="ms-3 text-capitalize" for="miModelo0">fiorino</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo1" name="miModelo" data="cronos">
+                                    <label class="ms-3 text-capitalize" for="miModelo1">cronos</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo2" name="miModelo" data="toro">
+                                    <label class="ms-3 text-capitalize" for="miModelo2">toro</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo3" name="miModelo" data="pulse">
+                                    <label class="ms-3 text-capitalize" for="miModelo3">pulse</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo4" name="miModelo" data="strada">
+                                    <label class="ms-3 text-capitalize" for="miModelo4">strada</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo5" name="miModelo" data="virtus">
+                                    <label class="ms-3 text-capitalize" for="miModelo5">virtus</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo6" name="miModelo" data="amarok">
+                                    <label class="ms-3 text-capitalize" for="miModelo6">amarok</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo7" name="miModelo" data="taos">
+                                    <label class="ms-3 text-capitalize" for="miModelo7">taos</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo8" name="miModelo" data="saveiro">
+                                    <label class="ms-3 text-capitalize" for="miModelo8">saveiro</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo9" name="miModelo" data="polo">
+                                    <label class="ms-3 text-capitalize" for="miModelo9">polo</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo10" name="miModelo" data="208">
+                                    <label class="ms-3 text-capitalize" for="miModelo10">208</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo11" name="miModelo" data="partner">
+                                    <label class="ms-3 text-capitalize" for="miModelo11">partner</label>
+                                </div>
+
+
+                                <!--RENAULDT-->
+                                
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo12" name="miModelo" data="sandero">
+                                    <label class="ms-3 text-capitalize" for="miModelo12">sandero</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo13" name="miModelo" data="logan">
+                                    <label class="ms-3 text-capitalize" for="miModelo13">logan</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo14" name="miModelo" data="kangoo">
+                                    <label class="ms-3 text-capitalize" for="miModelo14">kangoo</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo15" name="miModelo" data="duster">
+                                    <label class="ms-3 text-capitalize" for="miModelo15">duster</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo16" name="miModelo" data="alaskan">
+                                    <label class="ms-3 text-capitalize" for="miModelo16">alaskan</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo17" name="miModelo" data="oroch">
+                                    <label class="ms-3 text-capitalize" for="miModelo17">oroch</label>
+                                </div>
+
+
+
+
+
+
+
+
+
+                                
+                            </div>
+                        </form>
+                        <form class="combustible">   <!--! GENERO DIANMICAMENTE O HAGO APARECER LOS FILTOS -->
+                            <div class="d-flex align-items-center justify-content-between titulo-simbolo">
+                                <h3>combustible</h3>
+                                <span class="simbolo me-4" data="2">+</span>
+                            </div>
+                            <div class="contenedor-filtros" style="display: none;">
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton" id="miCombustible0" name="miCombustible" data="nafta">
+                                    <label class="ms-3 text-capitalize" for="miCombustible0">nafta</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton" id="miCombustible1" name="miCombustible" data="diesel">
+                                    <label class="ms-3 text-capitalize" for="miCombustible1">diesel</label>
+                                </div>
+                            </div>
+                        </form>
+                        <form class="caja">          <!--! GENERO DIANMICAMENTE O HAGO APARECER LOS FILTOS -->
+                            <div class="d-flex align-items-center justify-content-between titulo-simbolo">
+                                <h3>Tipo de caja</h3>
+                                <span class="simbolo me-4" data="2">+</span>
+                            </div>
+                            <div class="contenedor-filtros" style="display: none;">
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton" id="miCaja0" name="miCaja" data="manual">
+                                    <label class="ms-3 text-capitalize" for="miCaja0">Caja manual</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton" id="miCaja1" name="miCaja" data="automatica">
+                                    <label class="ms-3 text-capitalize" for="miCaja1">Caja automatica</label>
+                                </div>
+                            </div>
+                        </form>
+                        <form class="puertas">       <!--! GENERO DIANMICAMENTE O HAGO APARECER LOS FILTOS -->
+                            <div class="d-flex align-items-center justify-content-between titulo-simbolo">
+                                <h3>Cantidad de puertas</h3>
+                                <span class="simbolo me-4" data="2">+</span>
+                            </div>
+                            <div class="contenedor-filtros" style="display: none;">
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton" id="miPuerta0" name="miPuerta" data="2">
+                                    <label class="ms-3 text-capitalize" for="miPuerta0">2 puertas</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton" id="miPuerta1" name="miPuerta" data="4">
+                                    <label class="ms-3 text-capitalize" for="miPuerta1">4 puertas</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton" id="miPuerta2" name="miPuerta" data="5">
+                                    <label class="ms-3 text-capitalize" for="miPuerta2">5 puertas</label>
+                                </div>
+                            </div>
+                        </form>
+                        <form class="plan">          <!--! GENERO DIANMICAMENTE O HAGO APARECER LOS FILTOS -->
+                            <div class="d-flex align-items-center justify-content-between titulo-simbolo">
+                                <h3>Tipo de plan</h3>
+                                <span class="simbolo me-4" data="2">+</span>
+                            </div>
+                            <div class="contenedor-filtros" style="display: none;">
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton" id="miPlan0" name="miPlan" data="100">
+                                    <label class="ms-3 text-capitalize" for="miPlan0">100%</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton" id="miPlan1" name="miPlan" data="90">
+                                    <label class="ms-3 text-capitalize" for="miPlan1">90/10</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton" id="miPlan2" name="miPlan" data="80">
+                                    <label class="ms-3 text-capitalize" for="miPlan2">80/20</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton" id="miPlan3" name="miPlan" data="70">
+                                    <label class="ms-3 text-capitalize" for="miPlan3">70/30</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="ms-4 boton" id="miPlan4" name="miPlan" data="60">
+                                    <label class="ms-3 text-capitalize" for="miPlan4">60/40</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="row">
+            <section class="col-lg-4 d-flex justify-content-end categoria2 d-none d-lg-block">
+                <section class="filtro-categoria row d-flex justify-content-center">
+                    <div class=" col-lg-10 col-xl-9 col-xxl-8">
+            
+                        <div class="d-flex align-items-center contenedor-titulo">
+                            <h2 class="col-12">filtros</h2>
+                        </div>
+            
+                        <div class="col-12">
+                            <form class="marca">         <!--! GENERO DIANMICAMENTE O HAGO APARECER LOS FILTOS -->
+                                <div class="d-flex align-items-center justify-content-between titulo-simbolo">
+                                    <h3>Marca</h3>
+                                    <span class="simbolo me-4" data="0">+</span>
+                                </div>
+                                <div class="contenedor-filtros" style="display:none">
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton botonMarca" id="miMarca0" name="miMarca" data="peugeot" data-condicion="false">
+                                        <label class="ms-3 text-capitalize" for="miMarca0">peugeot</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton botonMarca" id="miMarca1" name="miMarca" data="fiat" data-condicion="false">
+                                        <label class="ms-3 text-capitalize" for="miMarca1">fiat</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton botonMarca" id="miMarca2" name="miMarca" data="vw" data-condicion="false">
+                                        <label class="ms-3 text-capitalize" for="miMarca2">vw</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton botonMarca" id="miMarca3" name="miMarca" data="renault" data-condicion="false">
+                                        <label class="ms-3 text-capitalize" for="miMarca3">Renauldt</label>
+                                    </div>
+                                </div>
+                            </form>
+                            <form class="modelo">        <!--! GENERO DIANMICAMENTE O HAGO APARECER LOS FILTOS -->
+                                <div class="d-flex align-items-center justify-content-between titulo-simbolo">
+                                    <h3>Modelo</h3>
+                                    <span class="simbolo me-4" data="1">+</span>
+                                </div>  
+                                <div class="contenedor-filtros" style="display: none;">
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo0" name="miModelo" data="fiorino">
+                                        <label class="ms-3 text-capitalize" for="miModelo0">fiorino</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo1" name="miModelo" data="cronos">
+                                        <label class="ms-3 text-capitalize" for="miModelo1">cronos</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo2" name="miModelo" data="toro">
+                                        <label class="ms-3 text-capitalize" for="miModelo2">toro</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo3" name="miModelo" data="pulse">
+                                        <label class="ms-3 text-capitalize" for="miModelo3">pulse</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo4" name="miModelo" data="strada">
+                                        <label class="ms-3 text-capitalize" for="miModelo4">strada</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo5" name="miModelo" data="virtus">
+                                        <label class="ms-3 text-capitalize" for="miModelo5">virtus</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo6" name="miModelo" data="amarok">
+                                        <label class="ms-3 text-capitalize" for="miModelo6">amarok</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo7" name="miModelo" data="taos">
+                                        <label class="ms-3 text-capitalize" for="miModelo7">taos</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo8" name="miModelo" data="saveiro">
+                                        <label class="ms-3 text-capitalize" for="miModelo8">saveiro</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo9" name="miModelo" data="polo">
+                                        <label class="ms-3 text-capitalize" for="miModelo9">polo</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo10" name="miModelo" data="208">
+                                        <label class="ms-3 text-capitalize" for="miModelo10">208</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo11" name="miModelo" data="partner">
+                                        <label class="ms-3 text-capitalize" for="miModelo11">partner</label>
+                                    </div>
+
+                                    <!--RENAULDT-->
+                                
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo12" name="miModelo" data="sandero">
+                                        <label class="ms-3 text-capitalize" for="miModelo12">sandero</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo13" name="miModelo" data="logan">
+                                        <label class="ms-3 text-capitalize" for="miModelo13">logan</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo14" name="miModelo" data="kangoo">
+                                        <label class="ms-3 text-capitalize" for="miModelo14">kangoo</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo15" name="miModelo" data="duster">
+                                        <label class="ms-3 text-capitalize" for="miModelo15">duster</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo16" name="miModelo" data="alaskan">
+                                        <label class="ms-3 text-capitalize" for="miModelo16">alaskan</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton botonesModelo" id="miModelo17" name="miModelo" data="oroch">
+                                        <label class="ms-3 text-capitalize" for="miModelo17">oroch</label>
+                                    </div>
+                                </div>
+                            </form>
+                            <form class="combustible">   <!--! GENERO DIANMICAMENTE O HAGO APARECER LOS FILTOS -->
+                                <div class="d-flex align-items-center justify-content-between titulo-simbolo">
+                                    <h3>combustible</h3>
+                                    <span class="simbolo me-4" data="2">+</span>
+                                </div>
+                                <div class="contenedor-filtros" style="display: none;">
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton" id="miCombustible0" name="miCombustible" data="nafta">
+                                        <label class="ms-3 text-capitalize" for="miCombustible0">nafta</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton" id="miCombustible1" name="miCombustible" data="diesel">
+                                        <label class="ms-3 text-capitalize" for="miCombustible1">diesel</label>
+                                    </div>
+                                </div>
+                            </form>
+                            <form class="caja">          <!--! GENERO DIANMICAMENTE O HAGO APARECER LOS FILTOS -->
+                                <div class="d-flex align-items-center justify-content-between titulo-simbolo">
+                                    <h3>Tipo de caja</h3>
+                                    <span class="simbolo me-4" data="2">+</span>
+                                </div>
+                                <div class="contenedor-filtros" style="display: none;">
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton" id="miCaja0" name="miCaja" data="manual">
+                                        <label class="ms-3 text-capitalize" for="miCaja0">Caja manual</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton" id="miCaja1" name="miCaja" data="automatica">
+                                        <label class="ms-3 text-capitalize" for="miCaja1">Caja automatica</label>
+                                    </div>
+                                </div>
+                            </form>
+                            <form class="puertas">       <!--! GENERO DIANMICAMENTE O HAGO APARECER LOS FILTOS -->
+                                <div class="d-flex align-items-center justify-content-between titulo-simbolo">
+                                    <h3>Cantidad de puertas</h3>
+                                    <span class="simbolo me-4" data="2">+</span>
+                                </div>
+                                <div class="contenedor-filtros" style="display: none;">
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton" id="miPuerta0" name="miPuerta" data="2">
+                                        <label class="ms-3 text-capitalize" for="miPuerta0">2 puertas</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton" id="miPuerta1" name="miPuerta" data="4">
+                                        <label class="ms-3 text-capitalize" for="miPuerta1">4 puertas</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton" id="miPuerta2" name="miPuerta" data="5">
+                                        <label class="ms-3 text-capitalize" for="miPuerta2">5 puertas</label>
+                                    </div>
+                                </div>
+                            </form>
+                            <form class="plan">          <!--! GENERO DIANMICAMENTE O HAGO APARECER LOS FILTOS -->
+                                <div class="d-flex align-items-center justify-content-between titulo-simbolo">
+                                    <h3>Tipo de plan</h3>
+                                    <span class="simbolo me-4" data="2">+</span>
+                                </div>
+                                <div class="contenedor-filtros" style="display: none;">
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton" id="miPlan0" name="miPlan" data="100">
+                                        <label class="ms-3 text-capitalize" for="miPlan0">100%</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton" id="miPlan1" name="miPlan" data="90">
+                                        <label class="ms-3 text-capitalize" for="miPlan1">90/10</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton" id="miPlan2" name="miPlan" data="80">
+                                        <label class="ms-3 text-capitalize" for="miPlan2">80/20</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton" id="miPlan3" name="miPlan" data="70">
+                                        <label class="ms-3 text-capitalize" for="miPlan3">70/30</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="ms-4 boton" id="miPlan4" name="miPlan" data="60">
+                                        <label class="ms-3 text-capitalize" for="miPlan4">60/40</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <!-- OCULTO ESTAS ETIQUETAS YA QUE EN LA VERSION DE COMPUTADORA NO SE TIENEN QUE VER
+                        <div class="contenedor-filtros-filtrar d-flex col-12 justify-content-evenly">
+                            <span class="text-center mt-3" id="filtrar">Aplicar</span>
+                            <span class="text-center mt-3" id="restablecer">Limpiar</span>
+                        </div>
+                        -->
+                    </div>
+                </section>
+            </section>
+            
+            <div class="col-lg-8 caja-filtros">
+                <div class="d-flex justify-content-between mt-4 mb-4 d-none d-lg-flex">
+                    <span class="cantidadProductos"></span>
+                    <span class="ordenarPor">Ordenar por</span>
+                </div>
+                <div class="menu-desplegable2 p-2 d-none d-lg-block">
+                    <div class="triangulo"></div>
+                    <ul class="d-flex flex-column p-0 m-0">
+                        <li class="menor-precio">
+                            <span>Menor precio</span>
+                        </li>
+                        <li class="mayor-precio">
+                            <span>Mayor precio</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contenedor-autos-padre">
+                    <section class="contenedor-autos row d-flex justify-content-center  justify-content-lg-start mt-xl-4 p-xl-4 p-lg-4 pt-lg-0 pt-sm-2 ps-sm-5 pe-sm-5">
+    
+                        <!--! GENERACION de Tarjetas de los autos -->
+                        <!--agrego todos los distintos modelos que hay-->
+            
+                    </section> 
+                </div>
+
+                
+            </div>
+ 
+        </div>
+
+
+        
+    </main>
+
+    <footer class="container-fluid mt-5">
+        <div class="row">
+            <div class="footer-1 d-flex justify-content-center col-12 flex-column text-center p-3">
+                <div class="row d-flex justify-content-center flex-column align-items-center">
+                    <img src="../imgs/header/logo-negro.svg" alt="logo de la empresa" class="img-fluid col-5 mt-5 mb-5">
+                    <span class="footer-suscribite">¡Suscríbete a nuesto Newsletter!</span>
+                    <span class="footer-suscribite-2 mb-3">y enterate de todas nuestras novedades!</span>
+    
+                    <!--! NEWSLETTER-->
+                    <form action="https://formsubmit.co/ezequiel.vulcano@gmail.com" method="POST">
+                        <label for="email" class="d-none">Correo Electrónico:</label>
+                        <div class="email-container">
+                            <input type="email" id="email" name="email" required class="email-button">
+                            <input type="submit" value="Enviar" class="submit-button">
+                        </div>
+                    </form>
+                </div>
+    
+            </div>
+            <div class="footer-2 col-12">
+                <div class="d-flex justify-content-center">
+                    <a href="https://www.facebook.com/nyemotors" target="_blank">
+                        <i class="fa-brands fa-square-facebook p-2"></i>
+                    </a>
+                    <a href="https://www.instagram.com/nyemotors_usados/" target="_blank">
+                        <i class="fa-brands fa-instagram p-2"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=5491128188055&text=Hola !!! Quiero recibir asesoramiento." target="_blank">
+                        <i class="fa-brands fa-whatsapp p-2"></i>
+                    </a>
+                </div>
+                <span class="text-center">N&E Motors © 2023, todos los derechos reservados.</span>
+            </div>
+        </div>
+        
+    </footer>
+
+    <!-- LIBRERAIA SWEET ALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!---->
+
+    <script src="../js/_navbarMobil.js"></script>
+    <script src="../js/_ahorroFiltro.js"></script>
+    <script src="../js/_detalle.js"></script>
+    <script src="../js/_objetoCatalogo.js"></script>
+</body>
+</html>
+

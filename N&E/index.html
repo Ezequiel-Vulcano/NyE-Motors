@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N&E Motors</title>
+    <link rel="stylesheet" href="../scss/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d906409094.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1 class="d-none">N&E Motors</h1>
+    <header class="container-fluid">
+        <div class="row nav-info">
+            <section class="col-12 d-flex justify-content-evenly align-items-center justify-content-lg-evenly">
+                    <span class="d-flex align-items-center d-none d-md-block">
+                        <i class="fa-solid fa-location-dot me-2"></i>
+                        Martin Fierro 3250, Villa Udaondo
+                    </span>
+                    <span class="d-flex align-items-center m-4">
+                        <i class="fa-solid fa-phone me-2"></i>0800-362-0085
+                    </span>
+                    <span class="d-flex align-items-center">
+                        <i class="fa-solid fa-envelope me-2"></i>adm.nyemotors@gmail.com
+                    </span>
+            </section>
+            <section class="col-12 mt-3 pb-3 d-flex justify-content-between d-md-none">
+                <div>
+                    <a href="../index.html">
+                        <img src="../imgs/header/logo-negro.svg" alt="logo de la empresa">
+                    </a>   
+                </div>
+                <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-bars" id="navegacion"></i>
+                </div>
+            </section>
+            <section class="col-12 mt-3 pb-3 d-flex justify-content-between d-none d-md-flex nav-destokp">
+                <div>
+                    <a href="../index.html">
+                        <img src="../imgs/header/logo-negro.svg" alt="logo de la empresa">
+                    </a>   
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#contacto">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="#section_6">Testimonios</a>
+                        </li>
+                        <li>
+                            <a href="#section_2">Nosotros</a>
+                        </li>
+                        <li>
+                            <a id="planes">Planes</a>
+                            <div class="triangulo"></div>
+                            <div class="menu-desplegable">
+                                <div class="triangulo"></div>
+                                <ul class="d-flex flex-column">
+                                    <li>
+                                        <a href="./pages/page_1.html" class="enlaces">Planes de ahorro</a>
+                                    </li>
+                                    <li>
+                                        <a href="./pages/page_3.html" class="enlaces">Planes adjudicados</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="./pages/page_4.html" class="vende">Vende tu auto</a>
+                </div>
+            </section>
+        </div>
+
+        <div class="row d-flex justify-content-end nav-mobile">
+            <section class="col-12 filtros-mobile">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between contenedor-titulo align-items-center me-5">
+                        <h2>Menu</h2>
+                        <i class="fa-solid fa-xmark cerrar"></i>
+                    </div>
+                    <div class="col-12 d-flex flex-column contenedor-paginas p-4">
+                        <a href="#contacto" class="mt-3 enlaces-ocultar">Contacto</a>
+                        <a href="#section_6" class="mt-3 enlaces-ocultar">Testimonios</a>
+                        <a href="#section_2" class="mt-3 enlaces-ocultar">Nosotros</a>
+                        <a href="./pages/page_4.html" class="mt-3 enlaces-ocultar">Vende tu Auto</a>
+
+
+                        <!--! BARRA DE BOOSTRAP PARA COLAPSAR ELEENTOS -->
+                        <a class="mt-3" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Planes
+                        </a>
+                        <div class="collapse" id="collapseExample">
+                            <ul>
+                                <li class="mt-4">
+                                    <a href="./pages/page_1.html" class="enlaces">Planes de ahorro</a>
+                                </li>
+                                <li class="mt-2">
+                                    <a href="./pages/page_3.html" class="enlaces">Planes adjudicados</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="footer-2 col-12">
+                        <div class="d-flex justify-content-center">
+                            <i class="fa-brands fa-square-facebook p-2"></i>
+                            <i class="fa-brands fa-instagram p-2"></i>
+                            <i class="fa-brands fa-whatsapp p-2"></i>
+                        </div>
+                        <span class="text-center">N&E Motors © 2023, todos los derechos reservados.</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <main class="container-fluid">
+
+        <!--TODO. SECCION 1-->
+        <section class="section_1 row p-lg-0">
+            <div id="carouselExampleAutoplaying" class="carousel slide p-0" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <!--
+                        <img src="./imgs/index/section1/portada3.png" class="d-block w-100" alt="fotos de portada de autos">-->
+                        <div class="contenedor-contenido">
+                            <h2>Tu proximo 0km <br> Cada vez mas cerca.</h2>
+                            <p class="d-none">Trabajamos con las marcas mas importantes del mercado y con nuestra propia cartera de vehiculos.</p>
+                            <a href="./pages/page_1.html">
+                                <div class="d-flex justify-content-center align-items-center modelos">
+                                    <span>Ver modelos</span>
+                                </div>  
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!--
+                        <img src="./imgs/index/section1/portada2.png" class="d-block w-100" alt="fotos de portada de autos"> -->
+                        <div class="contenedor-contenido">
+                            <h2>No lo dejes pasar<br> Tu 0km en cuotas.</h2>
+                            <p class="d-none">Trabajamos con las marcas mas importantes del mercado y con nuestra propia cartera de vehiculos.</p>
+                            <a href="./pages/page_1.html">
+                                <div class="d-flex justify-content-center align-items-center modelos">
+                                    <span>Ver modelos</span>
+                                </div>  
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+
+        <!--TODO. SECCION 2-->
+        <section id="section_2" class="section_2 row p-2 d-flex flex-column mt-sm-5 mb-sm-5 mt-lg-5 mb-lg-5">
+            <h2 class="text-center mt-4 col-12">Sobre N&E</h2>
+            <span class="borde col-12"></span>
+            <p class="text-center col-xl-10 m-auto p-3">
+                En N&E Motors, nos enorgullece ofrecer soluciones integrales para tus necesidades automotrices. Desde nuestro inicio hace tres años en Parque Leloir, Ituzaingó, hemos brindado un servicio excepcional basado en la transparencia, la honestidad y la integridad. Nos especializamos en la venta de planes de ahorro y planes adjudicados, así como en la selección cuidadosa de autos usados de calidad. Nuestro objetivo es proporcionarte opciones flexibles y accesibles para que puedas hacer realidad el sueño de tener tu propio vehículo.
+            </p>
+        </section>
+
+        <!--TODO. SECCION 3-->
+        <section class="section_3 row">
+            <div class="col-12">
+                <div class="row justify-content-evenly d-flex">
+                    <div class="section_3-cart col-xl-4 col-xxl-3 col-md-7 col-lg-4">
+                        <img src="./imgs/index/section2/logo1.svg" alt="logo de un auto">
+                        <h3>Tomamos tu usado</h3>
+                        <p class="mt-2">
+                            Ofrecemos el servicio "Tomamos tu Usado" para reducir el costo de tu próximo 0km. Entrega tu vehículo usado como parte del pago y haz la transición a un nuevo auto sin complicaciones. Visítanos hoy para más información.
+                        </p>
+                    </div>
+                    <div class="section_3-cart mt-5 mb-5 m-xl-0 col-xl-4 col-xxl-3 col-md-7 col-lg-4 m-lg-0">
+                        <img src="./imgs/index/section2/logo2.png" alt="logo de un auto">
+                        <h3>Asesoramiento Perzonalizado</h3>
+                        <p class="mt-2">
+                            Ofrecemos asesoramiento personalizado para encontrar el vehículo ideal para ti. Nuestro equipo experto te guiará a través de todas las opciones disponibles, asegurándonos de que tomes la mejor decisión. Visítanos hoy y experimenta un servicio centrado en el cliente.
+                        </p>
+                    </div>
+                    <div class="section_3-cart col-xl-4 col-xxl-3 col-md-7 col-lg-4">
+                        <img src="./imgs/index/section2/logo3.png" alt="logo de un auto">
+                        <h3>Variedad de Modelos</h3>
+                        <p class="mt-2">
+                            Nos enorgullece ofrecer una amplia variedad de modelos para satisfacer los gustos y necesidades de cada cliente. Trabajamos con más de seis marcas diferentes, asegurando que tengas acceso a una selección diversa de vehículos.
+                        </p>
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+        <!--TODO. SECCION 4-->        
+        <div class="container" >
+            <section class="section_4 row p-2">
+                <h2 class="text-center mt-5 col-12">Conoce nuestros modelos</h2>
+                <span class="borde"></span>
+                <p class="col-12">
+                    Atrevete a descubrir la gran variedad de modelos y marcas que tenemos para ofrecerte.
+                    ¡No dejes pasar la oportunidad de tu 0km!
+                </p>
+    
+                <div class="contenedor-filtros-2 col-12 d-xl-flex flex-wrap justify-content-around d-md-flex justify-content-md-evenly">
+    
+                    <!--Aqui irian las tarjetas-->
+                </div>
+    
+                <button class="col-sm-7 col-md-5 m-auto mt-5 col-lg-3 col-xl-2" id="verMas">ver mas</button>
+    
+            </section>
+        </div>
+        
+        <!--TODO. SECCION 5-->
+        <section class="section_5 row">
+
+            <!--! CARRUSEL PARA MOBIL DE TARJETAS DE LA MARCA
+            1) Compramos tu auto
+            2) planes de ahorro
+            3) seleccioandos multimarca
+            -->
+            <div class="d-lg-none">
+                <div id="carouselExampleRide" class="carousel slide"  data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="4000"> 
+                            <img src="./imgs/index/section5/compramos.png" class="d-block w-100" alt="foto de una pareja comprando un auto">
+                            <span>Compramos tu auto</span>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./imgs/index/section5/planes.png" class="d-block w-100" alt="foto de una pareja viendo autos">
+                            <span>Planes de ahorro</span>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./imgs/index/section5/seleccionados.png" class="d-block w-100" alt="foto de dos personas estrechandose las manos">
+                            <span>Seleccionados multimarca</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!--! CARRUSEL PARA "600px" DE TARJETAS DE LA MARCA -->
+            <div class="col-12 d-none d-lg-flex tarjetas-pc">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-xl-4"> 
+                        <img src="./imgs/index/section5/compramos.png" class="img-fluid"  alt="foto de una pareja comprando un auto">
+                        <span>Compramos tu auto</span>
+                    </div>
+                    <div class="col-lg-4 col-xl-4">
+                        <img src="./imgs/index/section5/planes.png" class="img-fluid"  alt="foto de una pareja viendo autos">
+                        <span>Planes de ahorro</span>
+                    </div>
+                    <div class="col-lg-4 col-xl-4">
+                        <img src="./imgs/index/section5/seleccionados.png" class="img-fluid" alt="foto de dos personas estrechandose las manos">
+                        <span>Seleccionados multimarca</span>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!--TODO. SECCION 6-->
+        <div class="container" >
+            <section class="section_6 row" id="section_6">
+                <div class="col-12">
+                    <h2 class="text-center mt-4">Testimonios</h2>
+                    <div class="borde"></div>
+                    <p class="text-center w-75 m-auto">
+                        Sumérgete en nuestra galería de propietarios felices, donde capturamos momentos emocionantes de clientes que han encontrado su compañero de ruta perfecto en N&E Motors. Desde la entrega de llaves hasta las primeras aventuras en carretera, estas fotos reflejan la alegría y la satisfacción de nuestra comunidad. Únete a nosotros y descubre cómo podemos hacer realidad tus sueños automotrices.
+                    </p>
+    
+                    <!--! CONTENDOR DE RESEÑAS MOBILE-->
+                    
+                    <div class="d-lg-none w-75 m-auto contenedor_mobil">
+                        <div class="contenedor-reseñas m-auto">
+                            <div id="carouselExample" class="carousel slide">
+        
+                                <!--! CONTENEDOR PARA AGREGAR DINAMICAMENTE RESEÑAS POSITIVAS mobile version-->
+                                <div class="carousel-inner" id="carruselReseñas">
+                                    
+                                    <!--! CONTENEDOR PARA AGREGAR DINAMICAMENTE RESEÑAS POSITIVAS-->
+                                    
+                                </div>    
+        
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!--! CONTENDOR DE RESEÑAS PC-->
+                    <div class="contenedor-reseñas d-none d-lg-flex contenedor_pc mt-5">
+                        <div id="carruselPC" class="carousel slide">
+                            
+                            <div class="carousel-inner">
+                                <div class="carousel-item row text-center active">
+                                    <div class="col-xl-3 d-inline-block vertical">
+                                        <span class="d-flex justify-content-center mt-3">
+                                            Sophie Dream's
+                                        </span>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="../imgs/index/section6/perfil.avif" alt="icono del perfil">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <i class="fi fi-ss-star"></i>
+                                            <i class="fi fi-ss-star"></i>
+                                            <i class="fi fi-ss-star"></i>
+                                            <i class="fi fi-ss-star"></i>
+                                            <i class="fi fi-ss-star"></i>
+                                        </div>
+                                        <span class="d-flex justify-content-center">23/09/2023</span>
+                                        <p class="text-center p-2">
+                                            Si querés un usado en muy muy muy buen estado, no lo dudes. Los chicos te atienden bárbaro, son súper atentos y te sacan todas las dudas.Excelente atención y calidad humana. 
+                                        </p>
+                                    </div>
+                                    <div class="col-xl-3 d-inline-block vertical">
+                                        <span class="d-flex justify-content-center mt-3">
+                                            Romina Battistotti
+                                        </span>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="../imgs/index/section6/perfil.avif" alt="icono del perfil">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <i class="fi fi-ss-star"></i>
+                                            <i class="fi fi-ss-star"></i>
+                                            <i class="fi fi-ss-star"></i>
+                                            <i class="fi fi-ss-star"></i>
+                                            <i class="fi fi-ss-star"></i>
+                                        </div>
+                                        <span class="d-flex justify-content-center">10/02/2024</span>
+                                        <p class="text-center p-2">
+                                            Excelente todo!!!! El trato, las explicaciones detalladas y todo el proceso hasta la entrega. Cumplieron con todo como lo habían dicho. Los eligiria nuevamente sin duda
+                                        </p>
+                                    </div>
+                                    <div class="col-xl-3 d-inline-block vertical">
+                                        <span class="d-flex justify-content-center mt-3">
+                                            Yuneibys Fajardo
+                                        </span>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="../imgs/index/section6/perfil.avif" alt="icono del perfil">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <i class="fi fi-ss-star"></i>
+                                            <i class="fi fi-ss-star"></i>
+                                            <i class="fi fi-ss-star"></i>
+                                            <i class="fi fi-ss-star"></i>
+                                            <i class="fi fi-ss-star"></i>
+                                        </div>
+                                        <span class="d-flex justify-content-center">15/10/2023</span>
+                                        <p class="text-center p-2">
+                                            Excelente atención ! Gente profesional, compre con Ana Arriola, muy atenta en cada uno los pasos a seguir. Me acompaño hasta el momento del retiro y me respeto lo pactado. Recomiendo
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item row text-center">
+                                    <div class="col-xl-3 d-inline-block vertical">
+                                        <span class="d-flex justify-content-center mt-3">
+                                            Maria Lucia Gomez
+                                        </span>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="../imgs/index/section6/perfil.avif" alt="icono del perfil">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <i class="fi fi-ss-star"></i>
+                                            <i class="fi fi-ss-star"></i>
+                                            <i class="fi fi-ss-star"></i>
+                                            <i class="fi fi-ss-star"></i>
+                                            <i class="fi fi-ss-star"></i>
+                                        </div>
+                                        <span class="d-flex justify-content-center">17/12/2023</span>
+                                        <p class="text-center p-2">
+                                            Tuve un pequeño inconveniente y se pusieron a disposición para solucionarlo, buena atención resolvieron todas mis inquietudes y estoy a gusto con eso... Excelente recomiendo!!
+                                        </p>
+                                    </div>
+                                    <div class="col-xl-3 d-inline-block vertical">
+                                        <span class="d-flex justify-content-center mt-3">
+                                            Martin Digiglio
+                                        </span>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="../imgs/index/section6/perfil.avif" alt="icono del perfil">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <i class="fi fi-ss-star"></i>
+                                            <i class="fi fi-ss-star"></i>
+                                            <i class="fi fi-ss-star"></i>
+                                            <i class="fi fi-ss-star"></i>
+                                            <i class="fi fi-ss-star"></i>
+                                        </div>
+                                        <span class="d-flex justify-content-center">23/06/2023</span>
+                                        <p class="text-center p-2">
+                                            Tienen excelente forma y trato para con los clientes, me cumplieron con todo lo pactado me entregaron en forma inmediata. Súper recomendable si Tenes q comprar o vender vehículo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carruselPC" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carruselPC" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!--TODO. SECCION 7-->
+        <section  class="section_7 row mt-5 mb-5 d-lg-none">
+            <div class="col-12">
+                <h2 class="text-center">Atención al cliente</h2>
+                <div class="text-start text-sm-center mt-3">
+                    <span class="d-block mt-1">Direccion:
+                        <span>Martin Fierro 3250, Villa Udaondo.</span>
+                    </span>
+                    <span class="d-block mt-1">Whatsapp: 
+                        <span>+54 9 11-2818-8055</span>
+                    </span>
+                    <span class="d-block mt-1">Telefono:
+                        <span>0800 362 0085</span>
+                    </span>
+                    <span class="d-block mt-1">Horarios:
+                        <span>Lunes a Viernes 9 a 18hs.</span>
+                    </span>
+                    <span class="d-block mt-1">Mail:
+                        <span>adm.nyemotors@gmail.com</span>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!--TODO. SECCION 8-->
+        <div class="container" id="contacto">
+            <section class="section_8 row d-flex justify-content-center mt-lg-5">
+                <div class="col-12 d-none d-lg-block mb-5">
+                    <img src="./imgs/index/section8/elegirnos.jpg" alt="foto de por que elegirnos" class="img-fluid">
+                </div>
+                <div class="col-12 d-none d-lg-block col-lg-4">
+                    <h2 class="text-center">Atención al cliente</h2>
+                    <div class="text-start mt-3">
+                        <span class="d-block mt-1 fw-bold">Direccion:
+                            <span class="fw-lighter">Martin Fierro 3250, Villa Udaondo.</span>
+                        </span>
+                        <span class="d-block mt-1 fw-bold">Whatsapp: 
+                            <span class="fw-lighter">+54 9 11-2818-8055</span>
+                        </span>
+                        <span class="d-block mt-1 fw-bold">Telefono:
+                            <span class="fw-lighter">0800 362 0085</span>
+                        </span>
+                        <span class="d-block mt-1 fw-bold">Horarios:
+                            <span class="fw-lighter">Lunes a Viernes 9 a 18hs.</span>
+                        </span>
+                        <span class="d-block mt-1 fw-bold">Mail:
+                            <span class="fw-lighter">adm.nyemotors@gmail.com</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-8 col-lg-8">
+                    <h2 class="text-center">Completa tus datos</h2>
+                    <p class="text-center mt-1">
+                        Complete el formulario y nos contactaremos con usted a la brevedad.
+                    </p>
+                    <form class="mt-3">                     
+                        <div class="row g-2 d-flex justify-content-center">
+                            <div class="col-10 col-lg-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="nombre" placeholder="nombre@ejemplo.com"> 
+                                    <label for="nombre">Nombre completo</label>
+                                </div>
+                            </div>
+                            <div class="col-10 col-lg-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="telefono" placeholder="telefono@ejemplo.com"> 
+                                    <label for="telefono">Telefono</label>
+                                </div>
+                            </div>
+                            <div class="col-10 col-lg-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="email@ejemplo.com"> 
+                                    <label for="email">Correo electrónico</label>
+                                </div>
+                            </div>
+                            <div class="col-10 col-lg-6">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                    <label for="floatingTextarea">Comentarios</label>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex justify-content-lg-end justify-content-start col-10 col-lg-7 ms-lg-2 col-xl-5">
+                                <button class="btn w-50" type="button">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+
+    <footer class="container-fluid mt-5">
+        <div class="row">
+            <div class="footer-1 d-flex justify-content-center col-12 flex-column text-center p-3">
+                <div class="row d-flex justify-content-center flex-column align-items-center">
+                    <img src="../imgs/header/logo-negro.svg" alt="logo de la empresa" class="img-fluid col-5 mt-5 mb-5">
+                    <span class="footer-suscribite">¡Suscríbete a nuesto Newsletter!</span>
+                    <span class="footer-suscribite-2 mb-3">y enterate de todas nuestras novedades!</span>
+    
+                    <!--! NEWSLETTER-->
+                    <form action="https://formsubmit.co/ezequiel.vulcano@gmail.com" method="POST">
+                        <label for="email" class="d-none">Correo Electrónico:</label>
+                        <div class="email-container">
+                            <input type="email" id="email" name="email" required class="email-button">
+                            <input type="submit" value="Enviar" class="submit-button">
+                        </div>
+                    </form>
+                </div>
+    
+            </div>
+            <div class="footer-2 col-12">
+                <div class="d-flex justify-content-center">
+                    <a href="https://www.facebook.com/nyemotors" target="_blank">
+                        <i class="fa-brands fa-square-facebook p-2"></i>
+                    </a>
+                    <a href="https://www.instagram.com/nyemotors_usados/" target="_blank">
+                        <i class="fa-brands fa-instagram p-2"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=5491128188055&text=Hola !!! Quiero recibir asesoramiento." target="_blank">
+                        <i class="fa-brands fa-whatsapp p-2"></i>
+                    </a>
+                </div>
+                <span class="text-center">N&E Motors © 2023, todos los derechos reservados.</span>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="./js/_navbarMobil.js"></script>
+    <script src="./js/_index.js"></script>
+    <script src="./js/_detalle.js"></script>
+    <script src="./js/_objetoCatalogo.js"></script>
+</body>
+</html>
